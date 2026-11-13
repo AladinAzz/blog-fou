@@ -1,0 +1,67 @@
+{
+  "page": "synthese-demarche",
+  "activities": [
+    {
+      "type": "qcm",
+      "titre": "Dans une synthèse, que fait-on des deux documents ?",
+      "consigne": "Choisissez la bonne réponse.",
+      "choix": [
+        "On résume le premier document, puis le second.",
+        "On croise leurs idées, thème par thème.",
+        "On garde le document le plus convaincant et on explique pourquoi."
+      ],
+      "reponse": 1,
+      "feedbackOk": "On croise les idées thème par thème. C'est ce que le jury du DALF appelle une vraie confrontation.",
+      "feedbackKo": "Résumer un texte puis l'autre, ce n'est pas synthétiser, et la synthèse ne prend pas parti. Relisez le tableau de confrontation plus haut."
+    },
+    {
+      "type": "vf",
+      "titre": "Ces affirmations sur la synthèse sont-elles vraies ?",
+      "consigne": "Jugez chaque affirmation.",
+      "items": [
+        {
+          "t": "On peut écrire « à mon avis » dans la conclusion.",
+          "a": false,
+          "fb": "La synthèse reste neutre du début à la fin, conclusion comprise."
+        },
+        {
+          "t": "La synthèse porte un titre.",
+          "a": true,
+          "fb": "Il annonce le thème commun aux deux documents."
+        },
+        {
+          "t": "On peut reprendre une phrase entière d'un document si on la met entre guillemets.",
+          "a": false,
+          "fb": "On reformule. Recopier, même entre guillemets, ne montre pas que vous avez compris."
+        }
+      ]
+    },
+    {
+      "type": "trous",
+      "titre": "Choisissez le connecteur qui convient",
+      "consigne": "en revanche · de même · par conséquent",
+      "options": [
+        "en revanche",
+        "de même",
+        "par conséquent"
+      ],
+      "phrases": [
+        {
+          "avant": "Le document 1 voit dans l'enseignement à distance une chance ;",
+          "apres": ", le document 2 en souligne surtout les limites.",
+          "a": "en revanche"
+        },
+        {
+          "avant": "Le premier auteur met l'accent sur l'autonomie des étudiants.",
+          "apres": ", le second insiste sur leur organisation personnelle.",
+          "a": "de même"
+        },
+        {
+          "avant": "Les deux textes constatent un fort taux d'abandon ;",
+          "apres": ", ils plaident pour un meilleur accompagnement.",
+          "a": "par conséquent"
+        }
+      ]
+    }
+  ]
+}
