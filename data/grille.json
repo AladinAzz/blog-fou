@@ -1,0 +1,73 @@
+{
+  "pointsMax": 3,
+  "provisoire": true,
+  "volets": [
+    {
+      "titre": "Contenu et démarche",
+      "criteres": [
+        {
+          "id": "consigne",
+          "label": "Consigne et nombre de mots",
+          "aide": "Le sujet est traité, la longueur demandée est respectée."
+        },
+        {
+          "id": "neutre",
+          "label": "Neutralité",
+          "aide": "Aucun avis personnel, aucun « je pense »."
+        },
+        {
+          "id": "confront",
+          "label": "Vraie confrontation",
+          "aide": "Les idées des deux textes sont croisées, pas résumées l’une après l’autre."
+        },
+        {
+          "id": "plan",
+          "label": "Plan clair",
+          "aide": "Un titre, une introduction, des parties qu’on repère."
+        },
+        {
+          "id": "reform",
+          "label": "Reformulation",
+          "aide": "Aucune phrase entière reprise des documents."
+        }
+      ]
+    },
+    {
+      "titre": "Langue",
+      "criteres": [
+        {
+          "id": "connect",
+          "label": "Cohérence et connecteurs",
+          "aide": "Les liens logiques sont variés et justes."
+        },
+        {
+          "id": "lexique",
+          "label": "Vocabulaire riche et précis",
+          "aide": "Le mot juste, peu de répétitions."
+        },
+        {
+          "id": "gram",
+          "label": "Grammaire et orthographe",
+          "aide": "Texte passé dans Scribens, fautes corrigées."
+        }
+      ]
+    }
+  ],
+  "seuils": [
+    {
+      "min": 0,
+      "titre": "À retravailler",
+      "conseil": "Reprenez la démarche : la confrontation et la reformulation posent souvent problème. Revoyez l'étape 2 avant de réécrire."
+    },
+    {
+      "min": 0.5,
+      "titre": "En bonne voie",
+      "conseil": "La base est là. Reprenez les critères où vous avez mis 0 ou 1 et corrigez-les un par un."
+    },
+    {
+      "min": 0.75,
+      "titre": "Synthèse solide",
+      "conseil": "Vous êtes proche des attentes du C1. Une dernière relecture de la langue avec Scribens, et c'est prêt."
+    }
+  ]
+}

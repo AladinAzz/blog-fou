@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Étape 4 · S'autoévaluer · Écrits académiques</title>
+<meta name="description" content="Grille d'auto-évaluation de la synthèse inspirée du DALF C1 : score et commentaire.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&amp;family=Permanent+Marker&amp;family=Courier+Prime:wght@400;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script src="../assets/js/grille.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header wrap">
+<a class="logo" href="../index.html"><span class="logo-mark">écrits</span><span class="logo-text">académiques</span><span class="visually-hidden"> · accueil</span></a>
+<nav class="menu" aria-label="Menu principal">
+<a class="tab" href="../index.html">Accueil</a>
+<a class="tab" href="../mode-emploi.html">Mode d'emploi</a>
+<a class="tab" href="../synthese/texte1.html" aria-current="true">Synthèse</a>
+<a class="tab" href="../phraseologie/introduction.html">Phraséologie</a>
+</nav>
+</header>
+<main id="contenu" class="wrap page">
+<nav class="steps" aria-label="Étapes de la synthèse">
+<a href="texte1.html">1 · Comprendre</a>
+<a href="demarche.html">2 · Démarche</a>
+<a href="redaction.html">3 · Rédiger</a>
+<span aria-current="step">4 · S'autoévaluer</span>
+</nav>
+<h1 class="page-title">Je relis, <span class="marker" style="transform:rotate(-2deg)">je me note</span></h1>
+<p class="lead">Gardez votre synthèse ouverte à côté. Relisez-la une fois pour chaque critère, puis choisissez la note qui correspond vraiment à ce que vous avez écrit.</p>
+<p class="bareme" data-bareme hidden></p>
+
+<div class="row" style="margin-top:48px" data-grille data-src="../data/grille.json">
+<div class="col-main volets" data-volets><p>Chargement de la grille…</p></div>
+<aside class="col-side score-box torn-dark" aria-labelledby="t-score">
+<p class="label" id="t-score">VOTRE SCORE</p>
+<p class="score-total" role="status"><span class="big" data-total>0</span><span class="of"> / <span data-max>0</span></span></p>
+<div class="score-track" aria-hidden="true"><div class="score-fill" data-barre></div></div>
+<p class="score-rated" data-rated>0 critère noté</p>
+<div class="score-advice" role="status">
+<p class="v" data-verdict>Continuez…</p>
+<p class="a" data-conseil>Notez tous les critères pour obtenir un commentaire.</p>
+</div>
+<div class="score-actions">
+<a class="btn btn--sky" href="https://www.scribens.fr/" target="_blank" rel="noopener">Ouvrir Scribens ↗<span class="visually-hidden"> (nouvel onglet)</span></a>
+<button class="btn btn--ghost" type="button" data-reset>Recommencer</button>
+</div>
+</aside>
+</div>
+
+<div class="pager">
+<a class="tab tab--mid" href="redaction.html">← Revenir à ma synthèse</a>
+<a class="tab tab--mid" href="../index.html">Accueil</a>
+</div>
+</main>
+
+</body>
+</html>
