@@ -193,12 +193,21 @@
       el: el('div', { class: 'table-wrap' }, [table]),
       check: function () {
         var good = 0;
+        var seen = {};   // lignes d'un même "groupe" : la même réponse ne compte qu'une fois
         rows.forEach(function (r) {
           var v = norm(r.input.value);
           var ok = v !== '' && (r.l.accepte || []).some(function (x) { return v.indexOf(norm(x)) !== -1; });
+          var duplicate = false;
+          if (ok && r.l.groupe) {
+            seen[r.l.groupe] = seen[r.l.groupe] || [];
+            duplicate = seen[r.l.groupe].indexOf(v) !== -1;
+            seen[r.l.groupe].push(v);
+            if (duplicate) ok = false;
+          }
           if (ok) good += 1;
           r.input.classList.add(ok ? 'is-ok' : 'is-ko');
-          var expected = r.l.attendu || ((r.l.accepte || [''])[0] + '…');
+          var expected = duplicate ? 'un autre mot que dans la case précédente'
+            : (r.l.attendu || ((r.l.accepte || [''])[0] + '…'));
           r.mark.appendChild(verdictSpan(ok, expected));
         });
         return { score: { good: good, total: rows.length } };
@@ -342,7 +351,7 @@
 
   /* ---------- Carte d'activité ---------- */
 
-  function renderActivity(a, index) {
+  function renderActivity(a, index, pageData) {
     var type = TYPES[a.type];
     var alt = index % 2 === 1;
     if (!type) {
@@ -354,6 +363,7 @@
     var score = el('span', { class: 'score', role: 'status' });
 
     var ctx = {
+      data: pageData || {},
       changed: function () {
         if (!verified) return;
         verified = false;
@@ -463,7 +473,7 @@
     document.querySelectorAll('.activites[data-src]').forEach(function (box) {
       load(box.getAttribute('data-src')).then(function (data) {
         box.textContent = '';
-        (data.activities || []).forEach(function (a, i) { box.appendChild(renderActivity(a, i)); });
+        (data.activities || []).forEach(function (a, i) { box.appendChild(renderActivity(a, i, data)); });
       }).catch(function (err) {
         box.textContent = '';
         box.appendChild(errorBox(err));
@@ -486,9 +496,16 @@
     });
   }
 
-  // API partagée avec concordance.js
-  window.FOU = { load: load, el: el, errorBox: errorBox, types: TYPES, renderActivity: renderActivity };
+  // API partagée avec concordance.js et souligner.js (types supplémentaires)
+  window.FOU = {
+    load: load, el: el, errorBox: errorBox, types: TYPES, renderActivity: renderActivity,
+    norm: norm, pop: pop, nextId: nextId, setPressed: setPressed, verdictSpan: verdictSpan, LETTERS: LETTERS
+  };
+  KINDS['vf-preuve'] = 'VRAI OU FAUX · JE SOULIGNE';
+  KINDS.connecteur = 'CONNECTEUR LOGIQUE';
 
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
-  else init();
+  // On attend DOMContentLoaded : les autres scripts « defer » (souligner.js)
+  // ont alors eu le temps d'enregistrer leurs types.
+  if (document.readyState === 'complete') init();
+  else document.addEventListener('DOMContentLoaded', init);
 })();

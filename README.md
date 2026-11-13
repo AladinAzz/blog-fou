@@ -73,6 +73,8 @@ Ajoutez un objet dans le tableau `activities` du fichier de la page : elle appar
   "lignes": [ { "label": "Premier avantage cité", "accepte": ["souplesse"], "attendu": "la souplesse" } ] }
 ```
 
+`groupe` (facultatif) : les lignes d'un même groupe doivent recevoir des réponses différentes (par exemple « Technologie (1) » et « Technologie (2) »). La même réponse écrite deux fois n'est comptée juste qu'une fois.
+
 **Appariement** : quand les options sont longues (plus de 40 caractères), elles sont affichées une seule fois sous forme de liste A, B, C… et chaque ligne propose les lettres. `fb` (facultatif) s'affiche après vérification.
 
 ```json
@@ -94,6 +96,25 @@ Ajoutez un objet dans le tableau `activities` du fichier de la page : elle appar
 ```json
 { "type": "reformulation", "titre": "…", "consigne": "…",
   "items": [ { "t": "« phrase du document »", "proposition": "reformulation possible" } ] }
+```
+
+Les deux types suivants sont dans `assets/js/souligner.js`, chargé après `activites.js` dans les pages d'activités.
+
+**Vrai ou faux + souligner la preuve** : le document de la page (clé `document`) s'affiche à côté des affirmations. L'apprenant répond vrai ou faux, puis clique sur la phrase du texte qui le montre. `preuve` est un extrait de la phrase attendue, ou une liste d'extraits si plusieurs phrases conviennent. Le score compte la réponse et la phrase (2 points par affirmation).
+
+```json
+{ "type": "vf-preuve", "titre": "…", "consigne": "…",
+  "items": [ { "t": "affirmation", "a": false, "preuve": ["et même la mode", "Dans la mode aussi"] } ] }
+```
+
+**Connecteur** : l'apprenant souligne le connecteur en cliquant sur le ou les mots de la phrase, puis écrit un mot de même sens (comparé à `remplacements`, sans accents). `production` (facultatif) ajoute une phrase libre, avec un exemple affiché après vérification.
+
+```json
+{ "type": "connecteur", "titre": "…", "consigne": "…",
+  "phrase": "Malgré ces régulations strictes, …", "connecteur": "Malgré",
+  "remplacements": ["en depit de", "bien que"], "attendu": "en dépit de, bien que…",
+  "production": { "consigne": "Écrivez une phrase…", "proposition": "…" },
+  "feedback": "…" }
 ```
 
 ### Le document d'une page texte

@@ -42,79 +42,169 @@
   "activities": [
     {
       "phase": "Compréhension globale",
-      "type": "appariement",
-      "titre": "Classez le vocabulaire par domaine",
-      "consigne": "Lisez le texte une première fois pour comprendre le sujet général, puis rangez chaque mot ou expression dans le domaine auquel il appartient.",
-      "options": [
-        "Technologie",
-        "Écologie",
-        "Droit",
-        "Économie"
-      ],
-      "gauche": [
+      "type": "tableau",
+      "titre": "Relevez le vocabulaire par domaine",
+      "consigne": "Lisez le texte une première fois pour comprendre le sujet général. Relevez ensuite dans le texte deux mots ou expressions différents pour chaque domaine.",
+      "lignes": [
         {
-          "t": "Obsolescence technique",
-          "a": "Technologie"
+          "label": "Technologie (1)",
+          "groupe": "tech",
+          "accepte": [
+            "technique",
+            "logiciel",
+            "mise a jour",
+            "mises a jour",
+            "appareil",
+            "electroni",
+            "electromenager",
+            "impression 3d",
+            "composant",
+            "numerique",
+            "technolog",
+            "piece"
+          ],
+          "attendu": "obsolescence technique, mises à jour logicielles, impression 3D…"
         },
         {
-          "t": "Ressources naturelles",
-          "a": "Écologie"
+          "label": "Technologie (2)",
+          "groupe": "tech",
+          "accepte": [
+            "technique",
+            "logiciel",
+            "mise a jour",
+            "mises a jour",
+            "appareil",
+            "electroni",
+            "electromenager",
+            "impression 3d",
+            "composant",
+            "numerique",
+            "technolog",
+            "piece"
+          ],
+          "attendu": "obsolescence technique, mises à jour logicielles, impression 3D…"
         },
         {
-          "t": "Délit",
-          "a": "Droit"
+          "label": "Écologie (1)",
+          "groupe": "eco",
+          "accepte": [
+            "environnement",
+            "ressource",
+            "dechet",
+            "emission",
+            "co2",
+            "nappe",
+            "sol",
+            "toxique",
+            "pollu",
+            "recycl",
+            "biodiversite",
+            "materiau",
+            "ecolog",
+            "durable"
+          ],
+          "attendu": "ressources naturelles, déchets électroniques, nappes phréatiques…"
         },
         {
-          "t": "Endettement des ménages",
-          "a": "Économie"
+          "label": "Écologie (2)",
+          "groupe": "eco",
+          "accepte": [
+            "environnement",
+            "ressource",
+            "dechet",
+            "emission",
+            "co2",
+            "nappe",
+            "sol",
+            "toxique",
+            "pollu",
+            "recycl",
+            "biodiversite",
+            "materiau",
+            "ecolog",
+            "durable"
+          ],
+          "attendu": "ressources naturelles, déchets électroniques, nappes phréatiques…"
         },
         {
-          "t": "Appareils électroniques",
-          "a": "Technologie"
+          "label": "Droit (1)",
+          "groupe": "droit",
+          "accepte": [
+            "delit",
+            "legislation",
+            "loi",
+            "droit",
+            "emprisonnement",
+            "amende",
+            "sanction",
+            "garantie",
+            "regulation",
+            "reglement",
+            "juridique",
+            "conformite",
+            "passible"
+          ],
+          "attendu": "délit, législation, peine d’emprisonnement…"
         },
         {
-          "t": "Déchets électroniques",
-          "a": "Écologie"
+          "label": "Droit (2)",
+          "groupe": "droit",
+          "accepte": [
+            "delit",
+            "legislation",
+            "loi",
+            "droit",
+            "emprisonnement",
+            "amende",
+            "sanction",
+            "garantie",
+            "regulation",
+            "reglement",
+            "juridique",
+            "conformite",
+            "passible"
+          ],
+          "attendu": "délit, législation, peine d’emprisonnement…"
         },
         {
-          "t": "Législation",
-          "a": "Droit"
+          "label": "Économie (1)",
+          "groupe": "econ",
+          "accepte": [
+            "endettement",
+            "menage",
+            "consommation",
+            "monopole",
+            "entreprise",
+            "economi",
+            "achat",
+            "acheter",
+            "marche",
+            "fabricant",
+            "importateur",
+            "production",
+            "enseigne"
+          ],
+          "attendu": "endettement des ménages, consommation effrénée, monopoles…"
         },
         {
-          "t": "Marché de consommation",
-          "a": "Économie"
-        },
-        {
-          "t": "Mises à jour logicielles",
-          "a": "Technologie"
-        },
-        {
-          "t": "Émissions à effet de serre",
-          "a": "Écologie"
-        },
-        {
-          "t": "Droits des consommateurs",
-          "a": "Droit"
-        },
-        {
-          "t": "Consommation effrénée",
-          "a": "Économie"
-        },
-        {
-          "t": "Impression 3D",
-          "a": "Technologie"
-        },
-        {
-          "t": "Nappes phréatiques",
-          "a": "Écologie"
-        },
-        {
-          "t": "Peine d’emprisonnement",
-          "a": "Droit"
-        },
-        {
-          "t": "Monopoles des grandes entreprises",
-          "a": "Économie"
+          "label": "Économie (2)",
+          "groupe": "econ",
+          "accepte": [
+            "endettement",
+            "menage",
+            "consommation",
+            "monopole",
+            "entreprise",
+            "economi",
+            "achat",
+            "acheter",
+            "marche",
+            "fabricant",
+            "importateur",
+            "production",
+            "enseigne"
+          ],
+          "attendu": "endettement des ménages, consommation effrénée, monopoles…"
         }
       ]
     },
@@ -148,34 +238,37 @@
       ]
     },
     {
-      "type": "vf",
-      "titre": "Vrai ou faux ?",
-      "consigne": "Jugez chaque affirmation, puis retrouvez dans le texte la phrase qui le montre : la rétroaction vous la donne pour vérifier.",
+      "type": "vf-preuve",
+      "titre": "Vrai ou faux ? Soulignez la preuve",
+      "consigne": "Dites si chaque affirmation est vraie ou fausse. Puis cliquez sur « Souligner la preuve » et soulignez dans le texte la phrase qui le montre.",
       "items": [
         {
           "t": "L’obsolescence programmée est une pratique utilisée par certains fabricants pour limiter la durée de vie d’un produit.",
           "a": true,
-          "fb": "§1 : « L’obsolescence programmée est une stratégie délibérée adoptée par certains fabricants pour limiter la durée de vie d’un produit. »"
+          "preuve": "stratégie délibérée adoptée par certains fabricants"
         },
         {
           "t": "Cette pratique vise à encourager les consommateurs à acheter moins.",
           "a": false,
-          "fb": "§1 : « Cette pratique vise à encourager les consommateurs à acheter de nouveaux produits plus fréquemment. »"
+          "preuve": "encourager les consommateurs à acheter de nouveaux produits"
         },
         {
           "t": "Le texte explique que ce phénomène concerne uniquement le domaine technologique.",
           "a": false,
-          "fb": "§2 : la stratégie « s’est étendue à divers secteurs tels que l’électronique, les appareils électroménagers et même la mode »."
+          "preuve": [
+            "et même la mode",
+            "Dans la mode aussi"
+          ]
         },
         {
           "t": "Cette pratique n’entraîne aucune conséquence sur l’environnement.",
           "a": false,
-          "fb": "§4 : « L’obsolescence programmée a des conséquences dramatiques sur l’environnement. »"
+          "preuve": "conséquences dramatiques sur l’environnement"
         },
         {
           "t": "En France, cette pratique est légale.",
           "a": false,
-          "fb": "§6 : « En France, l’obsolescence programmée est reconnue comme un délit depuis 2015. »"
+          "preuve": "reconnue comme un délit depuis 2015"
         }
       ]
     },
@@ -305,35 +398,40 @@
     },
     {
       "phase": "Cohérence du discours",
-      "type": "qcm",
+      "type": "tableau",
       "titre": "« Malgré ces régulations strictes, certaines entreprises ont recours à des techniques logicielles ou autres astuces pour échapper à la loi. »",
-      "consigne": "Quel est le rapport logique exprimé par cette phrase ?",
-      "choix": [
-        "La cause",
-        "L’opposition – concession",
-        "La conséquence",
-        "Le but"
-      ],
-      "reponse": 1,
-      "feedbackOk": "« Malgré » introduit une concession : les règles sont strictes, et pourtant certaines entreprises les contournent.",
-      "feedbackKo": "Repérez le premier mot de la phrase : « Malgré ». Il oppose deux faits : les règles sont strictes, mais des entreprises les contournent."
+      "consigne": "Quel est le rapport logique exprimé par cette phrase ? Écrivez-le.",
+      "lignes": [
+        {
+          "label": "Rapport logique exprimé",
+          "accepte": [
+            "opposition",
+            "concession"
+          ],
+          "attendu": "l’opposition ou la concession"
+        }
+      ]
     },
     {
-      "type": "reformulation",
-      "titre": "Remplacez « malgré » par « bien que »",
-      "consigne": "Récrivez la phrase avec « bien que ». Attention : « malgré » est suivi d’un nom, « bien que » d’un verbe au subjonctif. Puis écrivez votre propre phrase sur le thème de l’environnement.",
-      "champ": "Votre phrase",
-      "items": [
-        {
-          "t": "« Malgré ces régulations strictes, certaines entreprises ont recours à des techniques logicielles ou autres astuces pour échapper à la loi. »",
-          "proposition": "Bien que ces régulations soient strictes, certaines entreprises ont recours à des techniques logicielles ou à d’autres astuces pour échapper à la loi."
-        },
-        {
-          "t": "Écrivez une phrase sur le thème de l’environnement avec « bien que ».",
-          "proposition": "Exemple : Bien que les consommateurs connaissent les effets de la pollution, ils continuent souvent à acheter des produits jetables."
-        }
+      "type": "connecteur",
+      "titre": "Le connecteur de la phrase",
+      "consigne": "Toujours sur la même phrase : soulignez le mot qui exprime le rapport logique, puis remplacez-le par un autre mot qui exprime la même idée.",
+      "phrase": "Malgré ces régulations strictes, certaines entreprises ont recours à des techniques logicielles ou autres astuces pour échapper à la loi.",
+      "connecteur": "Malgré",
+      "remplacements": [
+        "en depit de",
+        "en depit des",
+        "bien que",
+        "quoique",
+        "meme si",
+        "nonobstant"
       ],
-      "feedback": "Vérifiez deux points : le verbe après « bien que » est-il au subjonctif ? Le sens de concession est-il conservé ?"
+      "attendu": "en dépit de, bien que, même si…",
+      "production": {
+        "consigne": "Écrivez une phrase sur le thème de l’environnement avec le mot que vous avez choisi.",
+        "proposition": "En dépit des efforts de recyclage, la quantité de déchets électroniques continue d’augmenter. Ou : Bien que les consommateurs connaissent les effets de la pollution, ils achètent encore des produits jetables."
+      },
+      "feedback": "« Malgré » est suivi d’un nom, comme « en dépit de ». « Bien que » et « même si » sont suivis d’un verbe : au subjonctif après « bien que » (bien que ces régulations soient strictes)."
     }
   ]
 }
