@@ -1,0 +1,12 @@
+{
+  "motsCible": 220,
+  "consigne": "À partir des deux documents, rédigez une synthèse d'environ {cible} mots. Donnez-lui un titre. Vous ne devez pas donner votre avis.",
+  "aConfirmer": true,
+  "checklist": [
+    "Ma synthèse a un titre.",
+    "L'introduction présente le thème et les deux documents.",
+    "Chaque partie croise les deux textes.",
+    "Je n'ai donné aucun avis personnel.",
+    "J'ai reformulé, sans recopier de phrase."
+  ]
+}

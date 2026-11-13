@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Étape 3 · Rédiger · Écrits académiques</title>
+<meta name="description" content="Rédiger sa synthèse avec un compteur de mots, une check-list et un lien vers Scribens.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&amp;family=Permanent+Marker&amp;family=Courier+Prime:wght@400;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script src="../assets/js/redaction.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header wrap">
+<a class="logo" href="../index.html"><span class="logo-mark">écrits</span><span class="logo-text">académiques</span><span class="visually-hidden"> · accueil</span></a>
+<nav class="menu" aria-label="Menu principal">
+<a class="tab" href="../index.html">Accueil</a>
+<a class="tab" href="../mode-emploi.html">Mode d'emploi</a>
+<a class="tab" href="../synthese/texte1.html" aria-current="true">Synthèse</a>
+<a class="tab" href="../phraseologie/introduction.html">Phraséologie</a>
+</nav>
+</header>
+<main id="contenu" class="wrap page" data-redaction data-src="../data/redaction.json">
+<nav class="steps" aria-label="Étapes de la synthèse">
+<a href="texte1.html">1 · Comprendre</a>
+<a href="demarche.html">2 · Démarche</a>
+<span aria-current="step">3 · Rédiger</span>
+<a href="grille.html">4 · S'autoévaluer</a>
+</nav>
+<h1 class="page-title">À vous <span class="marker">d'écrire</span></h1>
+
+<div class="consigne-box torn-dark">
+<p class="label">CONSIGNE</p>
+<p class="txt"><span data-consigne>À partir des deux documents, rédigez une synthèse. Donnez-lui un titre. Vous ne devez pas donner votre avis.</span> <span class="tbc" data-a-confirmer hidden>[sujet et nombre de mots à confirmer]</span></p>
+</div>
+
+<div class="row" style="margin-top:48px">
+<div class="col-main">
+<label class="field-label" for="synthese">Votre synthèse</label>
+<textarea id="synthese" class="writing" rows="18" spellcheck="true" aria-describedby="compteur avertissement" placeholder="Titre de la synthèse…&#10;&#10;Introduction : présentez le thème commun et les deux documents…"></textarea>
+<div class="counter" id="compteur">
+<div class="counter-row">
+<span role="status"><strong data-mots>0</strong> mot(s) · cible ≈ <span data-cible>220</span></span>
+<span class="state st-empty" data-etat>Pas encore commencé</span>
+</div>
+<div class="bar-track" aria-hidden="true"><div class="bar-fill bg-empty" data-barre></div><div class="bar-mark" style="left:83.333%"></div></div>
+</div>
+<div class="actions-row">
+<button class="btn" type="button" data-copier>Copier mon texte</button>
+<a class="tab tab--mid" style="background:var(--sky)" href="https://www.scribens.fr/" target="_blank" rel="noopener">Vérifier la langue avec Scribens ↗<span class="visually-hidden"> (nouvel onglet)</span></a>
+</div>
+<p class="warning" id="avertissement">Votre texte n'est pas enregistré sur le site. Copiez-le dans un document à vous avant de quitter la page.</p>
+</div>
+
+<aside class="col-side side-stack" aria-label="Aides à la rédaction">
+<div class="card card--flat" style="--r:1.2deg">
+<span class="tape tape--red" style="--x:38%;--w:76px;--t:-5deg" aria-hidden="true"></span>
+<h2 class="postit-title" style="font-size:22px;font-weight:400" id="t-check">Avant de passer à la grille</h2>
+<ul class="checklist" data-checklist aria-labelledby="t-check"></ul>
+<p class="check-count" data-check-count>0 / 5</p>
+</div>
+<div class="card card--white card--flat" style="--r:-1deg">
+<p class="label" style="color:var(--ink)">RELIRE LES DOCUMENTS</p>
+<p class="link-list" style="margin:0"><a href="texte1.html">Texte 1 →</a><a href="texte2.html">Texte 2 →</a><a href="demarche.html">Tableau de confrontation →</a></p>
+</div>
+<div class="postit postit--red postit--solid" style="--r:1.5deg">
+<p class="postit-title" style="font-size:20px">Connecteurs utiles</p>
+<p class="connecteurs">de même · en revanche · alors que · tandis que · par conséquent · en outre · toutefois · ainsi</p>
+</div>
+</aside>
+</div>
+
+<div class="pager">
+<a class="tab tab--mid" href="demarche.html">← La démarche</a>
+<a class="tab tab--red tab--big" href="grille.html">M'autoévaluer →</a>
+</div>
+</main>
+
+</body>
+</html>
