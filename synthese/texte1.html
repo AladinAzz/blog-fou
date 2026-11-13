@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Étape 1 · Texte 1 · Écrits académiques</title>
+<meta name="description" content="Lire le document 1 et faire ses activités de compréhension, corrigées automatiquement.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&amp;family=Permanent+Marker&amp;family=Courier+Prime:wght@400;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script src="../assets/js/activites.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header wrap">
+<a class="logo" href="../index.html"><span class="logo-mark">écrits</span><span class="logo-text">académiques</span><span class="visually-hidden"> · accueil</span></a>
+<nav class="menu" aria-label="Menu principal">
+<a class="tab" href="../index.html">Accueil</a>
+<a class="tab" href="../mode-emploi.html">Mode d'emploi</a>
+<a class="tab" href="../synthese/texte1.html" aria-current="true">Synthèse</a>
+<a class="tab" href="../phraseologie/introduction.html">Phraséologie</a>
+</nav>
+</header>
+<main id="contenu" class="wrap page">
+<nav class="steps" aria-label="Étapes de la synthèse">
+<span aria-current="step">1 · Comprendre</span>
+<a href="demarche.html">2 · Démarche</a>
+<a href="redaction.html">3 · Rédiger</a>
+<a href="grille.html">4 · S'autoévaluer</a>
+</nav>
+<div class="title-row">
+<h1 class="page-title">Texte <span class="marker">1</span></h1>
+<div class="doc-switch"><span>texte 1</span><a href="texte2.html">texte 2 →</a></div>
+</div>
+<p class="lead" style="margin-top:20px">Lisez le texte une première fois en entier, sans dictionnaire. Ensuite seulement, faites les activités : vous pouvez revenir au texte autant de fois que nécessaire.</p>
+
+<div class="row" style="margin-top:48px">
+<article class="col-main document" style="--r:-.5deg" aria-labelledby="t-doc" data-document data-src="../data/synthese-texte1.json">
+<span class="tape" style="--x:45%;--w:110px;--t:-4deg" aria-hidden="true"></span>
+<h2 id="t-doc">Document 1</h2>
+<p class="meta">Chargement du texte…</p>
+</article>
+<aside class="col-side postit postit--solid postit--red" style="--r:2deg" aria-labelledby="t-lecture">
+<p class="postit-title" id="t-lecture">Pendant la lecture</p>
+<ul data-pendant data-src="../data/synthese-texte1.json"></ul>
+</aside>
+</div>
+
+<div class="activites" data-src="../data/synthese-texte1.json"></div>
+
+<div class="pager">
+<span class="pager-note">Ensuite : le second document.</span>
+<a class="tab tab--red tab--big" href="texte2.html">Lire le texte 2 →</a>
+</div>
+</main>
+
+</body>
+</html>

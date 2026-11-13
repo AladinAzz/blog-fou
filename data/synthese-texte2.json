@@ -1,0 +1,104 @@
+{
+  "page": "synthese-texte2",
+  "document": {
+    "etiquette": "DOCUMENT 2 · TEXTE D'EXEMPLE, À REMPLACER",
+    "titre": "Le campus virtuel, un mirage ?",
+    "auteur": "[Auteur]",
+    "source": "[Source]",
+    "date": "[date]",
+    "paragraphes": [
+      "L'enseignement à distance est souvent présenté comme un progrès. Il ne faut pas pour autant oublier ce qu'il exige. Suivre un cours seul devant un écran suppose une autonomie que tous les étudiants n'ont pas en arrivant à l'université. Ceux qui réussissent sont souvent ceux qui savaient déjà s'organiser ; les autres décrochent sans bruit.",
+      "Le principal danger est l'isolement. Sans les échanges de couloir, les groupes de travail improvisés, la présence d'un enseignant à qui poser une question à la fin du cours, l'étudiant perd une partie de ce qui fait la vie universitaire. La motivation s'effrite, et l'abandon devient une issue presque naturelle.",
+      "À cela s'ajoutent des inégalités matérielles : une connexion instable, un ordinateur partagé avec la famille, l'absence d'un lieu calme pour travailler. Ce qui est une simple contrainte pour certains devient un obstacle pour d'autres. Avant de généraliser les cours en ligne, les universités devraient se demander à qui ils profitent réellement."
+    ]
+  },
+  "pendant": [
+    "L'auteur est-il pour ou contre ?",
+    "Quel est, selon lui, le danger principal ?",
+    "Quel thème est commun avec le texte 1 ?",
+    "Quel thème est nouveau ?"
+  ],
+  "activities": [
+    {
+      "type": "vf",
+      "titre": "Vrai ou faux ?",
+      "consigne": "Jugez chaque affirmation d'après le texte.",
+      "items": [
+        {
+          "t": "Pour l'auteur, tous les étudiants sont autonomes en arrivant à l'université.",
+          "a": false,
+          "fb": "§1 : c'est une autonomie « que tous les étudiants n'ont pas »."
+        },
+        {
+          "t": "L'isolement est, selon l'auteur, le principal danger.",
+          "a": true,
+          "fb": "Il le dit mot pour mot au début du §2."
+        },
+        {
+          "t": "Le texte évoque des difficultés matérielles.",
+          "a": true,
+          "fb": "§3 : connexion instable, ordinateur partagé, pas de lieu calme."
+        }
+      ]
+    },
+    {
+      "type": "tableau",
+      "titre": "Complétez le tableau",
+      "consigne": "Écrivez un mot ou une expression du texte dans chaque case.",
+      "lignes": [
+        {
+          "label": "Ce qui manque à l'étudiant à distance",
+          "accepte": [
+            "echange",
+            "contact",
+            "presence",
+            "groupe"
+          ]
+        },
+        {
+          "label": "Conséquence sur l'étudiant",
+          "accepte": [
+            "motivation",
+            "abandon",
+            "decroch"
+          ]
+        },
+        {
+          "label": "Exemple d'inégalité matérielle",
+          "accepte": [
+            "connexion",
+            "ordinateur",
+            "lieu"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "trous",
+      "titre": "Résumé à compléter",
+      "consigne": "Choisissez le mot qui convient pour reconstituer l'idée de chaque paragraphe.",
+      "options": [
+        "isolement",
+        "autonomie",
+        "inégalités"
+      ],
+      "phrases": [
+        {
+          "avant": "§1 · Le cours en ligne suppose une",
+          "apres": "que tous les étudiants n'ont pas.",
+          "a": "autonomie"
+        },
+        {
+          "avant": "§2 · L'",
+          "apres": "fait perdre la motivation et mène à l'abandon.",
+          "a": "isolement"
+        },
+        {
+          "avant": "§3 · Des",
+          "apres": "matérielles transforment une contrainte en obstacle.",
+          "a": "inégalités"
+        }
+      ]
+    }
+  ]
+}
