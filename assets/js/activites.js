@@ -319,7 +319,7 @@
       var answer = el('div');
       list.appendChild(el('div', { class: 'item' }, [
         el('p', { class: 'quote', text: it.t }),
-        el('label', { class: 'field-label', for: id, text: 'Votre reformulation ' + (i + 1) }),
+        el('label', { class: 'field-label', for: id, text: (a.champ || 'Votre reformulation') + ' ' + (i + 1) }),
         area,
         answer
       ]));

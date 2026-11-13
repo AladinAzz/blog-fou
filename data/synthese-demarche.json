@@ -47,18 +47,18 @@
       ],
       "phrases": [
         {
-          "avant": "Le document 1 voit dans l'enseignement à distance une chance ;",
-          "apres": ", le document 2 en souligne surtout les limites.",
+          "avant": "Le document 1 présente les producteurs comme des acteurs que la loi responsabilise ;",
+          "apres": ", le document 2 montre que certains fabricants réduisent volontairement la durée de vie des produits.",
           "a": "en revanche"
         },
         {
-          "avant": "Le premier auteur met l'accent sur l'autonomie des étudiants.",
-          "apres": ", le second insiste sur leur organisation personnelle.",
+          "avant": "Le document 1 encourage la réparation grâce au bonus réparation ;",
+          "apres": ", le document 2 cite la réparation parmi les moyens de lutter contre l'obsolescence programmée.",
           "a": "de même"
         },
         {
-          "avant": "Les deux textes constatent un fort taux d'abandon ;",
-          "apres": ", ils plaident pour un meilleur accompagnement.",
+          "avant": "Les deux documents soulignent la quantité de déchets produits ;",
+          "apres": ", ils plaident pour des produits plus durables.",
           "a": "par conséquent"
         }
       ]

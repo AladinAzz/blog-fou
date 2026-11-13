@@ -1,104 +1,339 @@
 {
   "page": "synthese-texte2",
   "document": {
-    "etiquette": "DOCUMENT 2 · TEXTE D'EXEMPLE, À REMPLACER",
-    "titre": "Le campus virtuel, un mirage ?",
-    "auteur": "[Auteur]",
-    "source": "[Source]",
+    "etiquette": "DOCUMENT 2 · TEXTE INFORMATIF",
+    "titre": "L’obsolescence programmée",
+    "auteur": "",
+    "source": "sao-bio.fr",
     "date": "[date]",
     "paragraphes": [
-      "L'enseignement à distance est souvent présenté comme un progrès. Il ne faut pas pour autant oublier ce qu'il exige. Suivre un cours seul devant un écran suppose une autonomie que tous les étudiants n'ont pas en arrivant à l'université. Ceux qui réussissent sont souvent ceux qui savaient déjà s'organiser ; les autres décrochent sans bruit.",
-      "Le principal danger est l'isolement. Sans les échanges de couloir, les groupes de travail improvisés, la présence d'un enseignant à qui poser une question à la fin du cours, l'étudiant perd une partie de ce qui fait la vie universitaire. La motivation s'effrite, et l'abandon devient une issue presque naturelle.",
-      "À cela s'ajoutent des inégalités matérielles : une connexion instable, un ordinateur partagé avec la famille, l'absence d'un lieu calme pour travailler. Ce qui est une simple contrainte pour certains devient un obstacle pour d'autres. Avant de généraliser les cours en ligne, les universités devraient se demander à qui ils profitent réellement."
+      "L’obsolescence programmée est une stratégie délibérée adoptée par certains fabricants pour limiter la durée de vie d’un produit. Cette pratique vise à encourager les consommateurs à acheter de nouveaux produits plus fréquemment. Elle repose sur l’incorporation de défauts ou de limitations des produits dès leur conception.",
+      "Le concept d’obsolescence programmée a été popularisé dans les années 1920 par un industriel américain du nom de Bernard London. La Grande Dépression faisait rage et London proposa que la fabrication de biens de consommation avec une durée de vie limitée pourrait être une solution pour relancer l’économie. Depuis lors, cette stratégie a évolué et s’est étendue à divers secteurs tels que l’électronique, les appareils électroménagers et même la mode.",
+      "Il existe principalement trois types d’obsolescence programmée :",
+      {
+        "liste": [
+          "Obsolescence technique : Il s’agit de l’introduction de composants fragiles qui se casseront après une certaine période d’utilisation.",
+          "Obsolescence logicielle : Les mises à jour logiciels rendent les anciens appareils moins performants.",
+          "Obsolescence perçue : Le consommateur est incité à acheter le nouveau modèle à cause d’une perception de nouveauté ou d’évolution."
+        ]
+      },
+      "L’obsolescence programmée a des conséquences dramatiques sur l’environnement. En limitant la durée de vie d’un produit, elle augmente la quantité de déchets électroniques générés. Ces déchets peuvent contenir des matériaux toxiques qui polluent les sols et les nappes phréatiques. De plus, produire constamment de nouveaux biens consomme des ressources naturelles précieuses et génère des émissions de CO2.",
+      "Sur le plan économique et social, l’obsolescence programmée exerce une pression sur les consommateurs pour qu’ils achètent de nouveaux produits. Cela peut conduire à une augmentation de l’endettement des ménages et à une culture de la consommation effrénée. En parallèle, cela renforce les monopoles des grandes entreprises au détriment des petites structures locales.",
+      "En France, l’obsolescence programmée est reconnue comme un délit depuis 2015. Selon la législation, tout fabricant ou importateur utilisant des stratégies visant à réduire intentionnellement la durée de vie d’un produit est passible de sanctions sévères. Cela inclut potentiellement une peine d’emprisonnement et une amende de 300 000 €. De plus, les législations sur les garanties des produits, notamment la garantie légale de conformité de 2 ans, est un frein à l’obsolescence programmée !",
+      "Malgré ces régulations strictes, certaines entreprises ont recours à des techniques logicielles ou autres astuces pour échapper à la loi. Les analyses signalent des pratiques telles que la limitation artificielle des mises à jour logicielles, l’utilisation de matériaux de qualité inférieure, et l’ajout de fonctionnalités secondaires non essentielles mais alléchantes pour attirer les consommateurs.",
+      "Heureusement, il existe plusieurs moyens pour contrecarrer l’obsolescence programmée, on en parle notamment dans l’article sur la consommation responsable :",
+      {
+        "liste": [
+          "La réparation, l’entretien, l’achat responsable, la revente ou le don."
+        ]
+      },
+      "Dans la mode aussi, l’obsolescence programmée existe. Elle se manifeste par la création délibérée de tendances éphémères et la production de vêtements de qualité moindre. Les grandes enseignes de fast fashion renouvellent rapidement leurs collections, parfois toutes les deux semaines, rendant les styles précédents rapidement « démodés ».",
+      "Parallèlement, l’utilisation de matériaux moins durables et de techniques de fabrication économiques réduit la qualité et donc la durée de vie des vêtements. Cette double stratégie, obsolescence esthétique et fonctionnelle, pousse les consommateurs à renouveler fréquemment leur garde-robe, alimentant ainsi un cycle de consommation accélérée.",
+      "Avec la prise de conscience croissante concernant l’environnement et les droits des consommateurs, il est possible que l’obsolescence programmée soit de plus en plus réglementée à travers le monde. Les initiatives pour promouvoir une économie circulaire, où les biens sont conçus pour durer et être recyclés, gagnent du terrain. Les nouvelles technologies, telles que l’impression 3D, permettent également aux consommateurs de créer et remplacer facilement des pièces défectueuses.",
+      "La lutte contre l’obsolescence programmée ne concerne pas uniquement les gouvernements et les régulateurs. Nous, en tant que consommateurs, avons aussi un rôle crucial à jouer. En restant informés et exigeants, nous pouvons faire pression sur les fabricants pour qu’ils adoptent des pratiques plus durables et éthiques. Nous pouvons également partager nos expériences, rejoindre des associations de consommateurs, et surtout consommer de manière réfléchie."
     ]
   },
   "pendant": [
-    "L'auteur est-il pour ou contre ?",
-    "Quel est, selon lui, le danger principal ?",
-    "Quel thème est commun avec le texte 1 ?",
-    "Quel thème est nouveau ?"
+    "Qu'est-ce que l'obsolescence programmée ?",
+    "Quelles en sont les conséquences, et pour qui ?",
+    "Quel axe du texte 1 ce document approfondit-il ?",
+    "Quelles solutions propose-t-il ? Les retrouvez-vous dans le texte 1 ?"
   ],
   "activities": [
     {
+      "phase": "Compréhension globale",
+      "type": "appariement",
+      "titre": "Classez le vocabulaire par domaine",
+      "consigne": "Lisez le texte une première fois pour comprendre le sujet général, puis rangez chaque mot ou expression dans le domaine auquel il appartient.",
+      "options": [
+        "Technologie",
+        "Écologie",
+        "Droit",
+        "Économie"
+      ],
+      "gauche": [
+        {
+          "t": "Obsolescence technique",
+          "a": "Technologie"
+        },
+        {
+          "t": "Ressources naturelles",
+          "a": "Écologie"
+        },
+        {
+          "t": "Délit",
+          "a": "Droit"
+        },
+        {
+          "t": "Endettement des ménages",
+          "a": "Économie"
+        },
+        {
+          "t": "Appareils électroniques",
+          "a": "Technologie"
+        },
+        {
+          "t": "Déchets électroniques",
+          "a": "Écologie"
+        },
+        {
+          "t": "Législation",
+          "a": "Droit"
+        },
+        {
+          "t": "Marché de consommation",
+          "a": "Économie"
+        },
+        {
+          "t": "Mises à jour logicielles",
+          "a": "Technologie"
+        },
+        {
+          "t": "Émissions à effet de serre",
+          "a": "Écologie"
+        },
+        {
+          "t": "Droits des consommateurs",
+          "a": "Droit"
+        },
+        {
+          "t": "Consommation effrénée",
+          "a": "Économie"
+        },
+        {
+          "t": "Impression 3D",
+          "a": "Technologie"
+        },
+        {
+          "t": "Nappes phréatiques",
+          "a": "Écologie"
+        },
+        {
+          "t": "Peine d’emprisonnement",
+          "a": "Droit"
+        },
+        {
+          "t": "Monopoles des grandes entreprises",
+          "a": "Économie"
+        }
+      ]
+    },
+    {
+      "type": "appariement",
+      "titre": "Reliez chaque expression à sa définition",
+      "consigne": "Pour chaque mot ou expression, choisissez la définition qui convient.",
+      "options": [
+        "Période pendant laquelle un produit peut être utilisé.",
+        "Limitation volontaire de la période de vie des produits.",
+        "Système qui favorise le recyclage et la réparation.",
+        "Restes d’appareils électroniques ou numériques jetés."
+      ],
+      "gauche": [
+        {
+          "t": "Obsolescence programmée",
+          "a": "Limitation volontaire de la période de vie des produits."
+        },
+        {
+          "t": "Économie circulaire",
+          "a": "Système qui favorise le recyclage et la réparation."
+        },
+        {
+          "t": "Déchets électroniques",
+          "a": "Restes d’appareils électroniques ou numériques jetés."
+        },
+        {
+          "t": "Durée de vie d’un produit",
+          "a": "Période pendant laquelle un produit peut être utilisé."
+        }
+      ]
+    },
+    {
       "type": "vf",
       "titre": "Vrai ou faux ?",
-      "consigne": "Jugez chaque affirmation d'après le texte.",
+      "consigne": "Jugez chaque affirmation, puis retrouvez dans le texte la phrase qui le montre : la rétroaction vous la donne pour vérifier.",
       "items": [
         {
-          "t": "Pour l'auteur, tous les étudiants sont autonomes en arrivant à l'université.",
+          "t": "L’obsolescence programmée est une pratique utilisée par certains fabricants pour limiter la durée de vie d’un produit.",
+          "a": true,
+          "fb": "§1 : « L’obsolescence programmée est une stratégie délibérée adoptée par certains fabricants pour limiter la durée de vie d’un produit. »"
+        },
+        {
+          "t": "Cette pratique vise à encourager les consommateurs à acheter moins.",
           "a": false,
-          "fb": "§1 : c'est une autonomie « que tous les étudiants n'ont pas »."
+          "fb": "§1 : « Cette pratique vise à encourager les consommateurs à acheter de nouveaux produits plus fréquemment. »"
         },
         {
-          "t": "L'isolement est, selon l'auteur, le principal danger.",
-          "a": true,
-          "fb": "Il le dit mot pour mot au début du §2."
+          "t": "Le texte explique que ce phénomène concerne uniquement le domaine technologique.",
+          "a": false,
+          "fb": "§2 : la stratégie « s’est étendue à divers secteurs tels que l’électronique, les appareils électroménagers et même la mode »."
         },
         {
-          "t": "Le texte évoque des difficultés matérielles.",
-          "a": true,
-          "fb": "§3 : connexion instable, ordinateur partagé, pas de lieu calme."
+          "t": "Cette pratique n’entraîne aucune conséquence sur l’environnement.",
+          "a": false,
+          "fb": "§4 : « L’obsolescence programmée a des conséquences dramatiques sur l’environnement. »"
+        },
+        {
+          "t": "En France, cette pratique est légale.",
+          "a": false,
+          "fb": "§6 : « En France, l’obsolescence programmée est reconnue comme un délit depuis 2015. »"
         }
       ]
     },
     {
+      "phase": "Compréhension détaillée",
       "type": "tableau",
-      "titre": "Complétez le tableau",
-      "consigne": "Écrivez un mot ou une expression du texte dans chaque case.",
+      "titre": "Pratiques à adopter, pratiques à éviter",
+      "consigne": "Relevez dans le texte des pratiques de consommation et classez-les : deux pratiques à adopter, deux pratiques à éviter. Un mot ou une expression suffit.",
       "lignes": [
         {
-          "label": "Ce qui manque à l'étudiant à distance",
+          "label": "Pratique à adopter (1)",
           "accepte": [
-            "echange",
-            "contact",
-            "presence",
-            "groupe"
-          ]
+            "repar",
+            "entretien",
+            "achat responsable",
+            "reven",
+            "don",
+            "reflechi",
+            "association",
+            "informe"
+          ],
+          "attendu": "la réparation, l’entretien, la revente, le don…"
         },
         {
-          "label": "Conséquence sur l'étudiant",
+          "label": "Pratique à adopter (2)",
           "accepte": [
-            "motivation",
-            "abandon",
-            "decroch"
-          ]
+            "repar",
+            "entretien",
+            "achat responsable",
+            "reven",
+            "don",
+            "reflechi",
+            "association",
+            "informe"
+          ],
+          "attendu": "la réparation, l’entretien, la revente, le don…"
         },
         {
-          "label": "Exemple d'inégalité matérielle",
+          "label": "Pratique à éviter (1)",
           "accepte": [
-            "connexion",
-            "ordinateur",
-            "lieu"
-          ]
+            "surconsomm",
+            "effren",
+            "impuls",
+            "mauvaise qualite",
+            "qualite moindre",
+            "qualite inferieure",
+            "gaspill",
+            "renouvel",
+            "fast fashion",
+            "tendance",
+            "plus frequemment"
+          ],
+          "attendu": "la consommation effrénée, le renouvellement fréquent…"
+        },
+        {
+          "label": "Pratique à éviter (2)",
+          "accepte": [
+            "surconsomm",
+            "effren",
+            "impuls",
+            "mauvaise qualite",
+            "qualite moindre",
+            "qualite inferieure",
+            "gaspill",
+            "renouvel",
+            "fast fashion",
+            "tendance",
+            "plus frequemment"
+          ],
+          "attendu": "la consommation effrénée, le renouvellement fréquent…"
         }
       ]
     },
     {
-      "type": "trous",
-      "titre": "Résumé à compléter",
-      "consigne": "Choisissez le mot qui convient pour reconstituer l'idée de chaque paragraphe.",
+      "type": "appariement",
+      "titre": "Retrouvez le plan du texte",
+      "consigne": "Pour chaque idée, indiquez le ou les paragraphes où elle est développée (repères §1, §2… dans le texte).",
       "options": [
-        "isolement",
-        "autonomie",
-        "inégalités"
+        "§1",
+        "§2",
+        "§3",
+        "§4-5",
+        "§6",
+        "§7",
+        "§8",
+        "§9-10",
+        "§11-12"
       ],
-      "phrases": [
+      "gauche": [
         {
-          "avant": "§1 · Le cours en ligne suppose une",
-          "apres": "que tous les étudiants n'ont pas.",
-          "a": "autonomie"
+          "t": "La définition",
+          "a": "§1"
         },
         {
-          "avant": "§2 · L'",
-          "apres": "fait perdre la motivation et mène à l'abandon.",
-          "a": "isolement"
+          "t": "L’origine historique du concept",
+          "a": "§2"
         },
         {
-          "avant": "§3 · Des",
-          "apres": "matérielles transforment une contrainte en obstacle.",
-          "a": "inégalités"
+          "t": "Les types d’obsolescence programmée",
+          "a": "§3"
+        },
+        {
+          "t": "Les conséquences écologiques, économiques et sociales",
+          "a": "§4-5"
+        },
+        {
+          "t": "Le point de vue juridique",
+          "a": "§6"
+        },
+        {
+          "t": "Les techniques pour échapper à la loi",
+          "a": "§7"
+        },
+        {
+          "t": "Les moyens de lutter : réparer, entretenir, revendre, donner",
+          "a": "§8"
+        },
+        {
+          "t": "L’obsolescence programmée dans la mode",
+          "a": "§9-10"
+        },
+        {
+          "t": "Les perspectives et le rôle des consommateurs",
+          "a": "§11-12"
         }
       ]
+    },
+    {
+      "phase": "Cohérence du discours",
+      "type": "qcm",
+      "titre": "« Malgré ces régulations strictes, certaines entreprises ont recours à des techniques logicielles ou autres astuces pour échapper à la loi. »",
+      "consigne": "Quel est le rapport logique exprimé par cette phrase ?",
+      "choix": [
+        "La cause",
+        "L’opposition – concession",
+        "La conséquence",
+        "Le but"
+      ],
+      "reponse": 1,
+      "feedbackOk": "« Malgré » introduit une concession : les règles sont strictes, et pourtant certaines entreprises les contournent.",
+      "feedbackKo": "Repérez le premier mot de la phrase : « Malgré ». Il oppose deux faits : les règles sont strictes, mais des entreprises les contournent."
+    },
+    {
+      "type": "reformulation",
+      "titre": "Remplacez « malgré » par « bien que »",
+      "consigne": "Récrivez la phrase avec « bien que ». Attention : « malgré » est suivi d’un nom, « bien que » d’un verbe au subjonctif. Puis écrivez votre propre phrase sur le thème de l’environnement.",
+      "champ": "Votre phrase",
+      "items": [
+        {
+          "t": "« Malgré ces régulations strictes, certaines entreprises ont recours à des techniques logicielles ou autres astuces pour échapper à la loi. »",
+          "proposition": "Bien que ces régulations soient strictes, certaines entreprises ont recours à des techniques logicielles ou à d’autres astuces pour échapper à la loi."
+        },
+        {
+          "t": "Écrivez une phrase sur le thème de l’environnement avec « bien que ».",
+          "proposition": "Exemple : Bien que les consommateurs connaissent les effets de la pollution, ils continuent souvent à acheter des produits jetables."
+        }
+      ],
+      "feedback": "Vérifiez deux points : le verbe après « bien que » est-il au subjonctif ? Le sens de concession est-il conservé ?"
     }
   ]
 }

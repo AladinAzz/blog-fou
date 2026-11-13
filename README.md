@@ -133,8 +133,7 @@ La colonne du milieu (pivot) est affichée telle quelle : elle peut varier d'une
 
 Chaque élément est signalé comme tel sur le site.
 
-- **Texte 2** (« Le campus virtuel, un mirage ? ») et ses activités : texte d'exemple de la maquette, sur l'enseignement à distance. Il ne parle donc pas du même sujet que le texte 1 (loi anti-gaspillage) : à remplacer par le second document retenu.
-- **Exemples de la page Démarche** (tableau de confrontation, texte à trous) : ils portent sur l'enseignement à distance, comme le texte 2 d'exemple.
+- **Texte 2** (« L'obsolescence programmée », sao-bio.fr) : le titre a été ajouté pour la page et la date reste à compléter (`[date]` dans `data/synthese-texte2.json`).
 - **Toutes les lignes de concordance** : à remplacer par l'extraction Sketch Engine, puis retirer la mention « Lignes d'exemple » dans les pages `phraseologie/*.html`.
 - **Barème de la grille** (0 à 3, provisoire) et **consigne de rédaction** (220 mots, « à confirmer » : passer `aConfirmer` à `false` une fois validée).
 - `[NOMS DE L'ÉQUIPE]` dans le pied de page de `index.html` et `mode-emploi.html`.
