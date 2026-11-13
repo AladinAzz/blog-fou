@@ -1,0 +1,114 @@
+{
+  "page": "phraseo-hypotheses",
+  "repere": "Le nom « hypothèse » attire toujours les mêmes verbes : on la fait, on la formule, on la confirme ou on l'infirme. Pour en donner le contenu, on emploie « que » ou « selon laquelle ». Les verbes de supposition (supposer, envisager) gardent la prudence nécessaire.",
+  "retenir": [
+    "Nous faisons l'hypothèse que…",
+    "Nous partons de l'hypothèse selon laquelle…",
+    "On peut supposer que…",
+    "Les résultats confirment / infirment l'hypothèse…"
+  ],
+  "nodes": [
+    {
+      "label": "hypothèse",
+      "lines": [
+        [
+          "Nous",
+          "faisons l'hypothèse",
+          "que le tutorat réduit le décrochage."
+        ],
+        [
+          "On peut alors",
+          "formuler l'hypothèse",
+          "d'un lien entre motivation et encadrement."
+        ],
+        [
+          "Les résultats permettent de",
+          "confirmer l'hypothèse",
+          "de départ."
+        ],
+        [
+          "Les entretiens semblent",
+          "infirmer cette hypothèse",
+          "dans le cas des étudiants salariés."
+        ]
+      ]
+    },
+    {
+      "label": "selon laquelle",
+      "lines": [
+        [
+          "Nous partons de l'hypothèse",
+          "selon laquelle",
+          "la motivation dépend de l'encadrement."
+        ],
+        [
+          "Une première hypothèse,",
+          "selon laquelle",
+          "le format en ligne favorise l'autonomie, sera discutée."
+        ],
+        [
+          "L'idée",
+          "selon laquelle",
+          "les étudiants préfèrent l'écrit mérite d'être vérifiée."
+        ]
+      ]
+    },
+    {
+      "label": "on peut supposer que",
+      "lines": [
+        [
+          "Au vu de ces premiers éléments,",
+          "on peut supposer que",
+          "le dispositif a un effet positif."
+        ],
+        [
+          "Dès lors,",
+          "on peut supposer que",
+          "les difficultés sont d'abord linguistiques."
+        ],
+        [
+          "À partir de nos observations,",
+          "on peut supposer que",
+          "le stage renforce le projet professionnel."
+        ]
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "type": "qcm",
+      "titre": "Vos résultats contredisent votre hypothèse.",
+      "consigne": "Quel verbe employez-vous ?",
+      "choix": [
+        "Les résultats confirment notre hypothèse.",
+        "Les résultats infirment notre hypothèse.",
+        "Les résultats affirment notre hypothèse."
+      ],
+      "reponse": 1,
+      "feedbackOk": "« Infirmer » veut dire montrer qu'une hypothèse est fausse. C'est l'inverse de « confirmer ».",
+      "feedbackKo": "« Confirmer » dirait le contraire, et on n'« affirme » pas une hypothèse. Le verbe attendu est « infirmer »."
+    },
+    {
+      "type": "vf",
+      "titre": "Vrai ou faux ?",
+      "consigne": "Ces affirmations portent sur la façon de présenter une hypothèse.",
+      "items": [
+        {
+          "t": "« Je pense que » convient pour formuler une hypothèse.",
+          "a": false,
+          "fb": "Préférez « nous faisons l'hypothèse que » : on présente une piste à vérifier, pas une opinion."
+        },
+        {
+          "t": "« Selon laquelle » introduit le contenu de l'hypothèse.",
+          "a": true,
+          "fb": "Exemple : l'hypothèse selon laquelle le tutorat réduit l'abandon."
+        },
+        {
+          "t": "Une hypothèse doit pouvoir être vérifiée par l'enquête.",
+          "a": true,
+          "fb": "Sinon, ce n'est qu'une affirmation. La méthodologie sert justement à la tester."
+        }
+      ]
+    }
+  ]
+}

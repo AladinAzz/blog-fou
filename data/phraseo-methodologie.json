@@ -1,0 +1,136 @@
+{
+  "page": "phraseo-methodologie",
+  "repere": "Les verbes reviennent avec leurs compléments habituels : on mène une enquête ou des entretiens, on diffuse un questionnaire, on constitue un corpus, on recueille des données. À la voix passive, le participe s'accorde avec le sujet : les entretiens ont été menés.",
+  "retenir": [
+    "Nous avons mené une enquête auprès de…",
+    "Le corpus se compose de…",
+    "Les données ont été recueillies au moyen de…",
+    "Nous avons opté pour une démarche qualitative / quantitative."
+  ],
+  "nodes": [
+    {
+      "label": "mener",
+      "lines": [
+        [
+          "Nous avons",
+          "mené une enquête",
+          "auprès des étudiants de première année."
+        ],
+        [
+          "Des entretiens semi-directifs ont été",
+          "menés",
+          "avec les tuteurs du dispositif."
+        ],
+        [
+          "L'observation a été",
+          "menée",
+          "pendant toute la durée du stage."
+        ]
+      ]
+    },
+    {
+      "label": "se compose de",
+      "lines": [
+        [
+          "Notre corpus",
+          "se compose de",
+          "mémoires soutenus en master."
+        ],
+        [
+          "L'échantillon",
+          "est constitué de",
+          "étudiants volontaires."
+        ],
+        [
+          "Le questionnaire",
+          "comporte",
+          "des questions fermées et des questions ouvertes."
+        ]
+      ]
+    },
+    {
+      "label": "recueillir",
+      "lines": [
+        [
+          "Les données ont été",
+          "recueillies",
+          "au moyen d'un questionnaire en ligne."
+        ],
+        [
+          "Nous avons",
+          "recueilli",
+          "les productions écrites des apprenants."
+        ],
+        [
+          "Les témoignages",
+          "recueillis",
+          "ont ensuite été analysés."
+        ]
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "type": "appariement",
+      "titre": "Quel complément pour quel verbe ?",
+      "consigne": "Associez chaque verbe au nom avec lequel il apparaît le plus souvent dans le corpus.",
+      "options": [
+        "un corpus",
+        "des entretiens",
+        "des données",
+        "un questionnaire"
+      ],
+      "gauche": [
+        {
+          "t": "mener",
+          "a": "des entretiens"
+        },
+        {
+          "t": "diffuser",
+          "a": "un questionnaire"
+        },
+        {
+          "t": "constituer",
+          "a": "un corpus"
+        },
+        {
+          "t": "recueillir",
+          "a": "des données"
+        }
+      ]
+    },
+    {
+      "type": "trous",
+      "titre": "Le passif et l'accord",
+      "consigne": "Choisissez la forme correcte du participe passé.",
+      "options": [
+        "diffusé",
+        "menés",
+        "constitué",
+        "recueillies"
+      ],
+      "phrases": [
+        {
+          "avant": "Le questionnaire a été",
+          "apres": "en ligne auprès des étudiants.",
+          "a": "diffusé"
+        },
+        {
+          "avant": "Les entretiens ont été",
+          "apres": "en face à face.",
+          "a": "menés"
+        },
+        {
+          "avant": "Le corpus a été",
+          "apres": "à partir de mémoires soutenus.",
+          "a": "constitué"
+        },
+        {
+          "avant": "Les réponses ont été",
+          "apres": "sur une période de deux mois.",
+          "a": "recueillies"
+        }
+      ]
+    }
+  ]
+}

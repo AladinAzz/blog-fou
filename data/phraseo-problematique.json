@@ -1,0 +1,108 @@
+{
+  "page": "phraseo-problematique",
+  "repere": "Que trouve-t-on avant l'expression ? Souvent un verbe de questionnement (se demander, chercher à, déterminer). Et après ? Une proposition complète, qui deviendra le cœur de votre problématique.",
+  "retenir": [
+    "Il convient de se demander dans quelle mesure…",
+    "La question est de savoir si…",
+    "Ce travail cherche à déterminer…",
+    "Nous nous interrogerons sur…"
+  ],
+  "nodes": [
+    {
+      "label": "dans quelle mesure",
+      "lines": [
+        [
+          "Il convient alors de se demander",
+          "dans quelle mesure",
+          "le stage prépare à l'insertion professionnelle."
+        ],
+        [
+          "Ce travail cherche à déterminer",
+          "dans quelle mesure",
+          "les outils numériques favorisent l'autonomie."
+        ],
+        [
+          "La question est de savoir",
+          "dans quelle mesure",
+          "ce dispositif répond aux besoins des apprenants."
+        ],
+        [
+          "Nous nous demanderons",
+          "dans quelle mesure",
+          "l'entreprise a intégré ces nouvelles pratiques."
+        ]
+      ]
+    },
+    {
+      "label": "il convient de",
+      "lines": [
+        [
+          "Avant d'aller plus loin,",
+          "il convient de",
+          "définir les notions centrales de l'étude."
+        ],
+        [
+          "Dans ce contexte,",
+          "il convient de",
+          "s'interroger sur les effets de cette réforme."
+        ],
+        [
+          "Pour répondre à cette question,",
+          "il convient de",
+          "préciser le cadre de notre enquête."
+        ]
+      ]
+    },
+    {
+      "label": "la question de savoir",
+      "lines": [
+        [
+          "Ce constat soulève",
+          "la question de savoir",
+          "si les stagiaires sont suffisamment encadrés."
+        ],
+        [
+          "Notre réflexion porte sur",
+          "la question de savoir",
+          "comment les étudiants s'approprient ces outils."
+        ],
+        [
+          "Il reste à examiner",
+          "la question de savoir",
+          "quels critères retenir pour l'évaluation."
+        ]
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "type": "appariement",
+      "titre": "Quel nom pour quel verbe ?",
+      "consigne": "Associez chaque verbe au nom avec lequel il apparaît le plus souvent dans le corpus.",
+      "options": [
+        "une question",
+        "le champ de l'étude",
+        "une hypothèse",
+        "une problématique"
+      ],
+      "gauche": [
+        {
+          "t": "émettre",
+          "a": "une hypothèse"
+        },
+        {
+          "t": "soulever",
+          "a": "une question"
+        },
+        {
+          "t": "dégager",
+          "a": "une problématique"
+        },
+        {
+          "t": "délimiter",
+          "a": "le champ de l'étude"
+        }
+      ]
+    }
+  ]
+}

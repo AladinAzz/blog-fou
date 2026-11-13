@@ -1,0 +1,120 @@
+{
+  "page": "phraseo-introduction",
+  "repere": "Le sujet est presque toujours le travail lui-même (ce mémoire, ce rapport, la présente étude), jamais « je ». Pour annoncer le plan, on enchaîne les étapes : dans un premier temps, puis, enfin.",
+  "retenir": [
+    "Ce travail s'inscrit dans le cadre de…",
+    "Ce rapport a pour objectif de…",
+    "Dans un premier temps…, dans un second temps…, enfin…",
+    "Nous commencerons par…"
+  ],
+  "nodes": [
+    {
+      "label": "s'inscrit dans",
+      "lines": [
+        [
+          "Ce mémoire",
+          "s'inscrit dans",
+          "le champ de la didactique du français langue étrangère."
+        ],
+        [
+          "Notre stage",
+          "s'inscrit dans",
+          "le cadre de la préparation au master professionnel."
+        ],
+        [
+          "La présente étude",
+          "s'inscrit dans",
+          "la continuité des travaux sur l'apprentissage en ligne."
+        ]
+      ]
+    },
+    {
+      "label": "a pour objectif de",
+      "lines": [
+        [
+          "Ce travail",
+          "a pour objectif de",
+          "décrire les pratiques d'écriture des étudiants."
+        ],
+        [
+          "Ce rapport",
+          "a pour objectif de",
+          "rendre compte des missions confiées au stagiaire."
+        ],
+        [
+          "L'enquête",
+          "a pour objectif de",
+          "mieux comprendre les besoins des apprenants."
+        ]
+      ]
+    },
+    {
+      "label": "dans un premier temps",
+      "lines": [
+        [
+          "Nous présenterons,",
+          "dans un premier temps,",
+          "le cadre théorique de l'étude."
+        ],
+        [
+          "Il s'agira,",
+          "dans un premier temps,",
+          "de décrire la structure d'accueil."
+        ],
+        [
+          "Nous reviendrons,",
+          "dans un premier temps,",
+          "sur les notions clés du sujet."
+        ]
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "type": "trous",
+      "titre": "Complétez l'introduction",
+      "consigne": "Choisissez la formule qui convient dans chaque phrase.",
+      "options": [
+        "s'inscrit dans",
+        "a pour objectif de",
+        "dans un premier temps",
+        "enfin"
+      ],
+      "phrases": [
+        {
+          "avant": "Ce mémoire",
+          "apres": "le champ de la didactique des langues.",
+          "a": "s'inscrit dans"
+        },
+        {
+          "avant": "Ce rapport",
+          "apres": "présenter les missions réalisées pendant le stage.",
+          "a": "a pour objectif de"
+        },
+        {
+          "avant": "Nous décrirons,",
+          "apres": ", la structure d'accueil.",
+          "a": "dans un premier temps"
+        },
+        {
+          "avant": "Nous proposerons,",
+          "apres": ", des pistes d'amélioration.",
+          "a": "enfin"
+        }
+      ]
+    },
+    {
+      "type": "qcm",
+      "titre": "Quelle phrase annonce le mieux le plan ?",
+      "consigne": "Choisissez la phrase qui convient à un mémoire.",
+      "choix": [
+        "Je vais vous parler de mon stage et de ce que j'ai fait.",
+        "Nous présenterons d'abord le cadre de l'étude, puis les résultats obtenus.",
+        "Mon stage était très intéressant et j'ai beaucoup appris."
+      ],
+      "reponse": 1,
+      "feedbackOk": "Registre écrit, « nous » d'auteur, étapes annoncées dans l'ordre.",
+      "feedbackKo": "Les deux autres phrases relèvent de l'oral ou d'un jugement personnel. À l'écrit académique, on annonce les étapes avec « nous »."
+    }
+  ]
+}

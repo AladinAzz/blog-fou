@@ -1,0 +1,129 @@
+{
+  "page": "phraseo-conclusion",
+  "repere": "Les formules de bilan ouvrent souvent la conclusion (au terme de, en définitive, il ressort que). La prudence reste de mise : une hypothèse est souvent « partiellement » confirmée. Et la dernière phrase regarde vers la suite, avec des perspectives ou une piste de recherche.",
+  "retenir": [
+    "Au terme de cette étude, il ressort que…",
+    "En définitive…",
+    "Notre hypothèse est (partiellement) confirmée.",
+    "Ce travail ouvre des perspectives pour…"
+  ],
+  "nodes": [
+    {
+      "label": "il ressort",
+      "lines": [
+        [
+          "Au terme de cette analyse,",
+          "il ressort que",
+          "les étudiants manquent surtout d'accompagnement."
+        ],
+        [
+          "",
+          "Il ressort de",
+          "nos entretiens que les tuteurs jouent un rôle central."
+        ],
+        [
+          "En définitive,",
+          "il ressort de",
+          "cette étude que le dispositif reste perfectible."
+        ]
+      ]
+    },
+    {
+      "label": "en définitive",
+      "lines": [
+        [
+          "",
+          "En définitive,",
+          "notre hypothèse n'est que partiellement confirmée."
+        ],
+        [
+          "Ce stage s'est révélé formateur.",
+          "En définitive,",
+          "il a confirmé notre projet professionnel."
+        ],
+        [
+          "Les résultats restent limités ;",
+          "en définitive,",
+          "une enquête plus large serait nécessaire."
+        ]
+      ]
+    },
+    {
+      "label": "perspectives",
+      "lines": [
+        [
+          "Ce travail",
+          "ouvre des perspectives",
+          "pour l'enseignement hybride."
+        ],
+        [
+          "Il serait intéressant,",
+          "dans une perspective",
+          "plus large, d'interroger les enseignants."
+        ],
+        [
+          "Ces résultats",
+          "ouvrent la voie à",
+          "une étude à plus grande échelle."
+        ]
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "type": "trous",
+      "titre": "Complétez la conclusion",
+      "consigne": "Choisissez la formule qui convient dans chaque phrase.",
+      "options": [
+        "Au terme de",
+        "il ressort",
+        "partiellement",
+        "ouvre des perspectives"
+      ],
+      "phrases": [
+        {
+          "avant": "",
+          "apres": "cette étude, plusieurs constats s'imposent.",
+          "a": "Au terme de"
+        },
+        {
+          "avant": "Des entretiens,",
+          "apres": "que les tuteurs jouent un rôle central.",
+          "a": "il ressort"
+        },
+        {
+          "avant": "Notre hypothèse n'est que",
+          "apres": "confirmée.",
+          "a": "partiellement"
+        },
+        {
+          "avant": "Ce travail",
+          "apres": "pour l'enseignement hybride.",
+          "a": "ouvre des perspectives"
+        }
+      ]
+    },
+    {
+      "type": "vf",
+      "titre": "Vrai ou faux ?",
+      "consigne": "Ces affirmations portent sur le rôle de la conclusion.",
+      "items": [
+        {
+          "t": "La conclusion présente de nouveaux résultats.",
+          "a": false,
+          "fb": "Elle fait le bilan de ce qui a été montré. Les résultats ont leur place dans le développement."
+        },
+        {
+          "t": "On y revient sur la problématique et les hypothèses.",
+          "a": true,
+          "fb": "C'est même le premier geste attendu : répondre à la question de départ."
+        },
+        {
+          "t": "On peut terminer par une ouverture.",
+          "a": true,
+          "fb": "Une piste de recherche ou une question nouvelle, en une ou deux phrases."
+        }
+      ]
+    }
+  ]
+}
