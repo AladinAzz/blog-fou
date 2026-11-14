@@ -1,0 +1,50 @@
+{
+  "titre": "Grille d'autoévaluation · rapport de stage",
+  "stockage": "acadecrit-grille-rapport",
+  "sections": [
+    {
+      "titre": "Compréhension du sujet et du genre",
+      "criteres": [
+        "Mon rapport répond précisément aux consignes données.",
+        "Je ne me contente pas de raconter chronologiquement ce que j'ai fait : j'analyse mon expérience.",
+        "Mon rapport adopte un registre adapté à l'écriture universitaire."
+      ]
+    },
+    {
+      "titre": "Organisation globale",
+      "criteres": [
+        "Mon introduction présente clairement le contexte du stage et son intérêt.",
+        "La problématique ou la question directrice est clairement formulée lorsqu'elle est attendue.",
+        "Le plan répond à la problématique et correspond au contenu du rapport.",
+        "Chaque partie possède une fonction clairement identifiable.",
+        "La conclusion répond à la problématique et dresse un bilan de l'expérience."
+      ]
+    },
+    {
+      "titre": "Cohérence et progression",
+      "criteres": [
+        "Les paragraphes sont correctement articulés entre eux.",
+        "Les connecteurs utilisés expriment précisément les relations logiques entre les idées.",
+        "Je ne juxtapose pas simplement des informations ou des événements."
+      ]
+    },
+    {
+      "titre": "Lexique et style académique",
+      "criteres": [
+        "Mon vocabulaire est précis et adapté au contexte professionnel et universitaire.",
+        "J'évite les formulations trop familières ou trop personnelles.",
+        "J'évite les répétitions lexicales inutiles.",
+        "J'utilise correctement les termes spécifiques à mon domaine.",
+        "Je vérifie les collocations ou formulations dont je ne suis pas certain·e."
+      ]
+    },
+    {
+      "titre": "Révision finale",
+      "criteres": [
+        "J'ai vérifié les erreurs récurrentes après une première relecture.",
+        "J'ai utilisé des outils de correction (Scribens, Compilatio) de manière critique et non automatique.",
+        "Lorsque j'avais un doute lexical ou syntaxique, j'ai vérifié l'usage dans des ressources fiables ou dans le corpus."
+      ]
+    }
+  ]
+}

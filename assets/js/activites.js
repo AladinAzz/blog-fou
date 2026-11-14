@@ -138,12 +138,13 @@
 
   TYPES.vf = function (a, ctx) {
     var list = el('div', { class: 'items' });
+    var labels = a.labels || ['Vrai', 'Faux'];
     var rows = (a.items || []).map(function (it) {
       var row = { value: null, it: it };
       var text = el('p', { class: 'item-text', text: it.t });
       var pair = el('div', { class: 'pair', role: 'group', 'aria-label': it.t });
       var buttons = [true, false].map(function (val, i) {
-        var b = el('button', { type: 'button', class: 'opt opt--vf', 'aria-pressed': 'false', text: val ? 'Vrai' : 'Faux' });
+        var b = el('button', { type: 'button', class: 'opt opt--vf', 'aria-pressed': 'false', text: val ? labels[0] : labels[1] });
         b.addEventListener('click', function () { row.value = val; setPressed(buttons, i); ctx.changed(); });
         pair.appendChild(b);
         return b;
@@ -409,7 +410,7 @@
         style: '--x:48px;--w:90px;--t:' + (alt ? '4deg' : '-5deg'),
         'aria-hidden': 'true'
       }),
-      el('p', { class: 'activite-kind', text: 'ACTIVITÉ ' + (index + 1) + ' · ' + (KINDS[a.type] || a.type.toUpperCase()) }),
+      el('p', { class: 'activite-kind', text: 'ACTIVITÉ ' + (index + 1) + ' · ' + (a.etiquette || KINDS[a.type] || a.type.toUpperCase()) }),
       el('h2', { class: 'activite-title', id: titleId, text: a.titre }),
       a.consigne ? el('p', { class: 'activite-consigne', text: a.consigne }) : null,
       widget.el,
@@ -503,7 +504,9 @@
   };
   KINDS['vf-preuve'] = 'VRAI OU FAUX · JE SOULIGNE';
   KINDS.connecteur = 'CONNECTEUR LOGIQUE';
-
+  KINDS.lacunaire = 'TEXTE LACUNAIRE';
+  KINDS.confrontation = 'TABLEAU DE CONFRONTATION';
+  KINDS.plan = 'MON BROUILLON DE PLAN';
   // On attend DOMContentLoaded : les autres scripts « defer » (souligner.js)
   // ont alors eu le temps d'enregistrer leurs types.
   if (document.readyState === 'complete') init();

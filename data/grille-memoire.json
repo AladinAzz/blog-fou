@@ -1,0 +1,80 @@
+{
+  "titre": "Grille d'autoévaluation · mémoire de recherche",
+  "stockage": "acadecrit-grille-memoire",
+  "sections": [
+    {
+      "titre": "Sujet et problématique",
+      "criteres": [
+        "Mon sujet est clairement défini et délimité.",
+        "J'explique l'intérêt scientifique ou didactique de mon sujet.",
+        "La problématique est formulée sous la forme d'une véritable question de recherche.",
+        "Mes objectifs de recherche sont clairement formulés."
+      ]
+    },
+    {
+      "titre": "Introduction",
+      "criteres": [
+        "L'introduction permet de comprendre progressivement le contexte de la recherche.",
+        "J'annonce clairement la démarche ou la structure du mémoire."
+      ]
+    },
+    {
+      "titre": "Organisation et argumentation",
+      "criteres": [
+        "Les parties et sous-parties sont équilibrées et cohérentes.",
+        "Chaque paragraphe développe une idée principale.",
+        "Mes affirmations sont justifiées par des arguments, des exemples ou des données."
+      ]
+    },
+    {
+      "titre": "Analyse des données",
+      "criteres": [
+        "Je distingue clairement la présentation des données de leur analyse.",
+        "Mes analyses répondent à mes questions de recherche.",
+        "Je m'appuie sur des données concrètes pour construire mes analyses."
+      ]
+    },
+    {
+      "titre": "Lexique et style scientifique",
+      "criteres": [
+        "Mon vocabulaire est précis et adapté à mon domaine de recherche.",
+        "J'évite les formulations trop générales ou imprécises.",
+        "J'utilise correctement les termes scientifiques et disciplinaires.",
+        "J'évite les répétitions lexicales inutiles.",
+        "Mes formulations sont suffisamment nuancées.",
+        "J'utilise des verbes et expressions adaptés à l'écriture scientifique : montrer, mettre en évidence, suggérer, souligner, interroger, supposer, etc."
+      ]
+    },
+    {
+      "titre": "Cohérence linguistique et discursive",
+      "criteres": [
+        "Les connecteurs expriment correctement les relations logiques entre mes idées.",
+        "Les reprises nominales et pronominales permettent d'éviter les ambiguïtés.",
+        "Les paragraphes sont correctement articulés.",
+        "Je maintiens une progression logique de l'information.",
+        "Les temps verbaux sont utilisés de manière cohérente.",
+        "Mon texte reste clair malgré la complexité des idées développées."
+      ]
+    },
+    {
+      "titre": "Conclusion",
+      "criteres": [
+        "Je réponds clairement à la problématique.",
+        "Je synthétise les principaux résultats sans répéter toute l'analyse.",
+        "Je rappelle les principaux apports de la recherche.",
+        "Je présente les limites de la recherche de manière pertinente.",
+        "J'ouvre éventuellement sur des perspectives de recherche ou des prolongements."
+      ]
+    },
+    {
+      "titre": "Révision finale",
+      "criteres": [
+        "J'ai effectué plusieurs relectures avec des objectifs différents.",
+        "J'ai vérifié la cohérence entre problématique, objectifs, méthodologie, analyse et conclusion.",
+        "J'ai vérifié mes formulations à l'aide de sources fiables ou du corpus lorsque j'avais un doute.",
+        "J'ai vérifié les répétitions, les connecteurs et les formulations trop vagues.",
+        "J'ai effectué une dernière relecture en me plaçant du point de vue d'un lecteur qui ne connaît pas ma recherche."
+      ]
+    }
+  ]
+}

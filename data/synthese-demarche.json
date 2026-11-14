@@ -2,49 +2,54 @@
   "page": "synthese-demarche",
   "activities": [
     {
-      "type": "qcm",
-      "titre": "Dans une synthèse, que fait-on des deux documents ?",
-      "consigne": "Choisissez la bonne réponse.",
-      "choix": [
-        "On résume le premier document, puis le second.",
-        "On croise leurs idées, thème par thème.",
-        "On garde le document le plus convaincant et on explique pourquoi."
-      ],
-      "reponse": 1,
-      "feedbackOk": "On croise les idées thème par thème. C'est ce que le jury du DALF appelle une vraie confrontation.",
-      "feedbackKo": "Résumer un texte puis l'autre, ce n'est pas synthétiser, et la synthèse ne prend pas parti. Relisez le tableau de confrontation plus haut."
+      "type": "vf",
+      "phase": "1 · Mise en place de la technique",
+      "etiquette": "OUI OU NON",
+      "labels": ["Oui", "Non"],
+      "titre": "« Une synthèse, ce n’est pas… »",
+      "consigne": "Pour chaque affirmation, demande-toi : est-ce que je fais cela dans une synthèse ? Réponds par oui ou par non.",
+      "items": [
+        { "t": "Je donne mon opinion personnelle sur le sujet.", "a": false, "fb": "La synthèse reste neutre du début à la fin : pas de « je pense », pas de « à mon avis »." },
+        { "t": "Je présente les idées essentielles des documents.", "a": true, "fb": "Je sélectionne l’essentiel et je laisse de côté les détails et les exemples secondaires." },
+        { "t": "Je résume le premier document puis le deuxième séparément.", "a": false, "fb": "Deux résumés mis bout à bout ne font pas une synthèse : je croise les documents." },
+        { "t": "Je mets en relation les idées des différents documents.", "a": true, "fb": "C’est le cœur de la synthèse : je rapproche, j’oppose, je complète." },
+        { "t": "Je peux utiliser des informations qui ne figurent pas dans les documents.", "a": false, "fb": "Je travaille uniquement à partir des documents. Mes connaissances personnelles restent dehors." },
+        { "t": "Je reformule les idées avec mes propres mots.", "a": true, "fb": "Reformuler prouve que j’ai compris." },
+        { "t": "Je cite de longs passages des documents.", "a": false, "fb": "Je ne recopie pas : je condense et je reformule." },
+        { "t": "J’organise les idées autour de plusieurs axes.", "a": true, "fb": "Deux ou trois axes thématiques donnent son plan à la synthèse." }
+      ]
     },
     {
-      "type": "vf",
-      "titre": "Ces affirmations sur la synthèse sont-elles vraies ?",
-      "consigne": "Jugez chaque affirmation.",
-      "items": [
-        {
-          "t": "On peut écrire « à mon avis » dans la conclusion.",
-          "a": false,
-          "fb": "La synthèse reste neutre du début à la fin, conclusion comprise."
-        },
-        {
-          "t": "La synthèse porte un titre.",
-          "a": true,
-          "fb": "Il annonce le thème commun aux deux documents."
-        },
-        {
-          "t": "On peut reprendre une phrase entière d'un document si on la met entre guillemets.",
-          "a": false,
-          "fb": "On reformule. Recopier, même entre guillemets, ne montre pas que vous avez compris."
-        }
+      "type": "lacunaire",
+      "titre": "Construisons ensemble une définition",
+      "consigne": "Complète la définition avec les mots de la liste. Attention : il y a des intrus.",
+      "texte": "Une synthèse consiste à [sélectionner], [reformuler] et [organiser] les idées [essentielles] de [plusieurs] documents afin de répondre à une [problématique] commune, sans donner son [opinion] personnelle.",
+      "distracteurs": ["recopier", "secondaires", "un seul"],
+      "feedbackOk": "Bravo ! Garde cette définition sous les yeux pendant toute la démarche."
+    },
+    {
+      "type": "appariement",
+      "titre": "Construire ma « boîte à outils »",
+      "consigne": "Classe chaque expression selon sa fonction : introduire une idée, rapprocher deux idées, opposer, ajouter ou conclure.",
+      "options": ["introduire une idée", "rapprocher deux idées", "opposer", "ajouter", "conclure"],
+      "gauche": [
+        { "t": "Les deux documents montrent que…", "a": "introduire une idée", "fb": "J’introduis une idée commune aux deux documents : c’est une bonne façon d’ouvrir un axe." },
+        { "t": "De même", "a": "rapprocher deux idées" },
+        { "t": "En revanche", "a": "opposer" },
+        { "t": "Contrairement à", "a": "opposer" },
+        { "t": "Tandis que…", "a": "opposer" },
+        { "t": "Cependant", "a": "opposer" },
+        { "t": "De plus", "a": "ajouter" },
+        { "t": "Les auteurs soulignent également que…", "a": "ajouter", "fb": "« également » ajoute une idée à la précédente." },
+        { "t": "Ainsi", "a": "conclure" },
+        { "t": "En conclusion", "a": "conclure" }
       ]
     },
     {
       "type": "trous",
-      "titre": "Choisissez le connecteur qui convient",
-      "consigne": "en revanche · de même · par conséquent",
-      "options": [
-        "en revanche",
-        "de même",
-        "par conséquent"
-      ],
+      "titre": "Je choisis le connecteur qui convient",
+      "consigne": "Les phrases parlent des deux documents du cours. Choisis : en revanche · de même · par conséquent.",
+      "options": ["en revanche", "de même", "par conséquent"],
       "phrases": [
         {
           "avant": "Le document 1 présente les producteurs comme des acteurs que la loi responsabilise ;",
@@ -62,6 +67,41 @@
           "a": "par conséquent"
         }
       ]
+    },
+    {
+      "type": "confrontation",
+      "phase": "2 · Du tableau au plan",
+      "titre": "Je croise les deux documents",
+      "consigne": "À partir des deux documents, complète le tableau en associant les idées qui traitent du même aspect. Indique ensuite la relation entre ces idées : complément, opposition, cause, conséquence, illustration, convergence…",
+      "lignes": 4,
+      "relations": ["convergence", "complément", "opposition", "cause", "conséquence", "illustration"],
+      "modele": [
+        { "axe": "Environnement", "doc1": "limiter les déchets, préserver les ressources et le climat", "doc2": "déchets électroniques toxiques, ressources consommées, émissions de CO2", "rel": "convergence" },
+        { "axe": "Producteurs", "doc1": "responsabilisés : ils financent la fin de vie de leurs produits", "doc2": "certains réduisent volontairement la durée de vie des produits", "rel": "opposition" },
+        { "axe": "Cadre légal", "doc1": "nouvelles obligations : indice de réparabilité, bonus réparation", "doc2": "délit depuis 2015, mais la loi est parfois contournée", "rel": "complément" },
+        { "axe": "Solutions", "doc1": "réparation, réemploi, don des invendus", "doc2": "réparation, entretien, revente, don", "rel": "convergence" }
+      ],
+      "feedback": "Compare avec ton tableau : as-tu trouvé les mêmes axes ? Une autre relation est possible si tu peux la justifier avec les textes."
+    },
+    {
+      "type": "plan",
+      "titre": "Je construis le plan de ma synthèse",
+      "consigne": "À partir de ton tableau, regroupe les idées en deux ou trois grands axes et écris ton brouillon de plan. Il reste enregistré dans ton navigateur : tu le retrouveras au moment de rédiger.",
+      "champs": [
+        { "label": "Introduction", "aide": "Présentation du thème + problématique" },
+        { "label": "I. Premier aspect du problème", "aide": "Titre de l’axe : idée du document 1 + idée du document 2" },
+        { "label": "II. Deuxième aspect", "aide": "Titre de l’axe : idée du document 1 + idée du document 2" },
+        { "label": "III. Dernier aspect (facultatif)", "aide": "Titre de l’axe : idée du document 1 + idée du document 2" },
+        { "label": "Conclusion", "aide": "Bilan général, sans avis personnel" }
+      ],
+      "exemple": [
+        "Introduction → présentation du thème + problématique",
+        "I. Premier aspect du problème → document 1 + document 2",
+        "II. Deuxième aspect → document 1 + document 2",
+        "III. Dernier aspect → document 1 + document 2",
+        "Conclusion → bilan général"
+      ],
+      "feedback": "Chaque partie de ton plan mélange-t-elle bien les deux documents ? Si une partie ne parle que d’un seul texte, retourne à ton tableau."
     }
   ]
 }

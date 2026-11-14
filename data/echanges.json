@@ -1,0 +1,58 @@
+{
+  "fils": [
+    {
+      "id": "t1",
+      "type": "travail",
+      "auteur": "Mei",
+      "role": "etudiant",
+      "date": "12 nov.",
+      "titre": "Ma synthèse sur l’obsolescence programmée (2e version)",
+      "texte": "Bonjour, voici ma synthèse corrigée après la grille. J’ai surtout retravaillé la conclusion : j’y avais laissé un avis personnel.",
+      "fichier": "synthese-Mei-v2.docx",
+      "reponses": [
+        { "auteur": "Kofi", "role": "etudiant", "date": "12 nov.", "texte": "Ton plan est très clair ! Dans ta partie II, je crois que tu résumes encore le document 1 puis le document 2 : tu pourrais les croiser davantage." },
+        { "auteur": "Hiba AZZOUZ", "role": "prof", "date": "13 nov.", "texte": "Bravo Mei, la conclusion est maintenant neutre. Je rejoins Kofi pour la partie II : reprends ton tableau de confrontation et commence chaque paragraphe par un point commun aux deux documents. Revois aussi l’activité sur les connecteurs.", "lien": { "texte": "Revoir la démarche", "url": "synthese/demarche.html" } }
+      ]
+    },
+    {
+      "id": "t2",
+      "type": "question",
+      "auteur": "Lucas",
+      "role": "etudiant",
+      "date": "11 nov.",
+      "titre": "Dans un rapport de stage, peut-on écrire « je » ?",
+      "texte": "Dans le corpus, certains rapports utilisent « je » et d’autres « nous ». Qu’est-ce qui est attendu dans notre formation ?",
+      "reponses": [
+        { "auteur": "Aïcha", "role": "etudiant", "date": "11 nov.", "texte": "J’ai remarqué la même chose : « je » apparaît surtout dans la partie sur les missions." },
+        { "auteur": "Manel LAFERI", "role": "prof", "date": "11 nov.", "texte": "Bonne observation à tous les deux ! Dans un rapport de stage, « je » est accepté pour décrire tes missions et ton bilan personnel. Pour l’analyse, on préfère des tournures plus neutres. L’essentiel est de rester cohérent dans tout le rapport. Regarde aussi la vidéo du tutoriel à partir de la partie sur la rédaction.", "lien": { "texte": "Page rapport de stage", "url": "autonomie/rapport-stage.html" } }
+      ]
+    },
+    {
+      "id": "t3",
+      "type": "discussion",
+      "auteur": "Elena",
+      "role": "etudiant",
+      "date": "9 nov.",
+      "titre": "Vos astuces pour reformuler sans recopier ?",
+      "texte": "Compilatio m’a signalé deux phrases trop proches du texte source. Comment faites-vous pour reformuler ?",
+      "reponses": [
+        { "auteur": "Kofi", "role": "etudiant", "date": "9 nov.", "texte": "Je ferme le document, j’explique l’idée à voix haute, puis j’écris ce que j’ai dit." },
+        { "auteur": "Mei", "role": "etudiant", "date": "10 nov.", "texte": "Moi, je change la structure de la phrase : un verbe devient un nom (« réduire les déchets » → « la réduction des déchets »)." },
+        { "auteur": "Asmaa FEDALI", "role": "prof", "date": "10 nov.", "texte": "Excellentes stratégies ! Vous pouvez les combiner : comprendre l’idée, fermer le texte, écrire, puis comparer. Pour trouver des synonymes précis, le CNRTL est une ressource fiable.", "lien": { "texte": "Synonymes sur le CNRTL", "url": "https://www.cnrtl.fr/synonymie/" } }
+      ]
+    },
+    {
+      "id": "t4",
+      "type": "travail",
+      "auteur": "Aïcha",
+      "role": "etudiant",
+      "date": "8 nov.",
+      "titre": "Introduction de mon mémoire : avis bienvenus",
+      "texte": "J’ai rédigé l’introduction de mon mémoire sur l’enseignement de l’oral. J’ai utilisé des formules repérées dans les concordances.",
+      "fichier": "intro-memoire-Aicha.pdf",
+      "reponses": [
+        { "auteur": "Hiba AZZOUZ", "role": "prof", "date": "9 nov.", "texte": "Ton contexte est bien posé. Ta problématique est encore une question fermée (réponse oui/non) : essaie de la reformuler avec « dans quelle mesure… » ou « comment… ». Remplis ensuite la grille du mémoire, section 1.", "lien": { "texte": "Phraséologie de la problématique", "url": "phraseologie/problematique.html" } }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Échanges · Acadécrit</title>
+<meta name="description" content="L'espace d'échanges d'Acadécrit : déposer ses travaux, poser ses questions, discuter entre étudiants et recevoir les commentaires des enseignantes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&amp;family=Permanent+Marker&amp;family=Courier+Prime:wght@400;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/echanges.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header wrap">
+<a class="logo" href="index.html"><span class="logo-mark">Acad</span><span class="logo-text">écrit</span><span class="visually-hidden"> · accueil</span></a>
+<nav class="menu" aria-label="Menu principal">
+<a class="tab" href="index.html">Accueil</a>
+<a class="tab" href="mode-emploi.html">Mode d'emploi</a>
+<a class="tab" href="synthese/texte1.html">Cours</a>
+<a class="tab" href="autonomie/rapport-stage.html">Autonomie</a>
+<a class="tab" href="echanges.html" aria-current="page">Échanges</a>
+</nav>
+</header>
+<main id="contenu" class="wrap page" data-echanges data-src="data/echanges.json">
+<h1 class="page-title">On en <span class="marker">parle ?</span></h1>
+<p class="lead">Ici, tu déposes tes travaux, tu poses tes questions et tu discutes avec les autres étudiants. Nous lisons tout : nous te répondons avec des commentaires et des liens vers les ressources utiles.</p>
+
+<p class="demo-banner" role="note"><strong>Maquette.</strong> Le site est statique : ce que tu publies ici reste dans ton navigateur, rien n'est envoyé et personne d'autre ne le voit. Les conversations ci-dessous sont des exemples.</p>
+
+<div class="row" style="gap:40px">
+<div class="col-side side-stack" style="flex-basis:320px">
+<form class="ech-form" data-publier novalidate style="position:relative">
+<span class="tape tape--red" style="--x:36px;--w:80px;--t:-5deg" aria-hidden="true"></span>
+<h2 class="section-title section-title--sm" style="margin:0">Je publie</h2>
+<div>
+<label class="field-label" for="ech-genre">Je veux…</label>
+<select id="ech-genre" name="genre">
+<option value="travail">déposer un travail</option>
+<option value="question">poser une question</option>
+<option value="discussion">lancer une discussion</option>
+</select>
+</div>
+<div>
+<label class="field-label" for="ech-prenom">Mon prénom</label>
+<input id="ech-prenom" name="prenom" type="text" autocomplete="given-name" maxlength="60">
+</div>
+<div>
+<label class="field-label" for="ech-titre">Titre</label>
+<input id="ech-titre" name="titre" type="text" maxlength="200" required>
+</div>
+<div>
+<label class="field-label" for="ech-message">Mon message</label>
+<textarea id="ech-message" name="message" maxlength="4000" required></textarea>
+</div>
+<div>
+<label class="field-label" for="ech-fichier">Mon fichier (facultatif)</label>
+<input id="ech-fichier" name="fichier" type="file" accept=".pdf,.doc,.docx,.odt,.txt">
+</div>
+<div class="actions-row" style="margin-top:4px">
+<button class="btn" type="submit">Publier</button>
+<button class="btn btn--ghost" type="button" data-effacer>Effacer mes essais</button>
+</div>
+<p class="plan-saved" role="status" data-publier-status></p>
+</form>
+<div class="postit" style="--r:1.2deg">
+<span class="tape tape--cream" style="--x:40%" aria-hidden="true"></span>
+<p class="postit-title">Nos règles d'or</p>
+<ul>
+<li>Je dis ce que j'ai déjà essayé.</li>
+<li>Je commente le travail, pas la personne.</li>
+<li>Je propose une piste, pas une correction toute faite.</li>
+<li>Je remercie et je reviens dire ce qui a marché.</li>
+</ul>
+</div>
+</div>
+
+<section class="col-main" aria-labelledby="t-fils">
+<h2 id="t-fils" class="visually-hidden">Les conversations</h2>
+<div class="ech-tabs" role="group" aria-label="Filtrer les conversations">
+<button type="button" data-filter="tous" aria-pressed="true">Tout</button>
+<button type="button" data-filter="travail" aria-pressed="false">Travaux déposés</button>
+<button type="button" data-filter="question" aria-pressed="false">Questions</button>
+<button type="button" data-filter="discussion" aria-pressed="false">Discussions</button>
+</div>
+<div class="threads" data-threads aria-live="polite"><p>Chargement des échanges…</p></div>
+</section>
+</div>
+</main>
+<footer class="site-footer wrap">
+<span>Acadécrit · Projet DUFLEPES</span>
+<span>Hiba AZZOUZ · Manel LAFERI · Asmaa FEDALI · 2026</span>
+</footer>
+</body>
+</html>

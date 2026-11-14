@@ -1,11 +1,14 @@
-# Blog FOU · Écrits académiques
+# Acadécrit
 
-Site statique pour la formation FOU (Français sur Objectif Universitaire, DUFLEPES), du B2 au C1, entièrement en ligne.
+Site statique pour apprendre à écrire à l'université (DUFLEPES, du B2 au C1), entièrement en ligne. Énonciation impliquée : on tutoie l'apprenant (je, tu, nous).
 
 - **Rubrique 1 · Synthèse de documents** : comprendre les deux textes, apprendre la démarche, rédiger, s'autoévaluer avec une grille.
-- **Rubrique 2 · Phraséologie** : concordances tirées d'un corpus de mémoires et de rapports de stage, repérage des formules, entraînement.
+- **Rubrique 2 · Autonomie** : deux sous-pages (rapport de stage, mémoire de recherche) avec un tutoriel YouTube, le corpus en PDF, les étapes de l'écrit (liées aux pages de phraséologie) et une grille Oui / En partie / Non.
+- **Échanges** : maquette d'espace d'interaction (dépôt de travaux, questions, discussions, commentaires des enseignantes). Rien n'est envoyé : les publications restent dans le navigateur (localStorage).
 
-HTML, CSS et JavaScript vanilla : pas de framework, pas d'étape de build, pas de serveur, pas de compte. Seules ressources externes : Google Fonts et le lien vers [Scribens](https://www.scribens.fr/).
+Menu : Accueil · Mode d'emploi · Cours (rubrique synthèse) · Autonomie · Échanges.
+
+HTML, CSS et JavaScript vanilla : pas de framework, pas d'étape de build, pas de serveur, pas de compte. Ressources externes : Google Fonts, la photo d'accueil (Unsplash), les vidéos YouTube (youtube-nocookie) et les liens vers [Scribens](https://www.scribens.fr/) et [Compilatio](https://www.compilatio.net/).
 
 ## Lancer le site en local
 
@@ -25,12 +28,18 @@ Après avoir modifié un JSON, rechargez la page avec **Ctrl + F5** (ou Cmd + Ma
 index.html                 accueil
 mode-emploi.html           s'autocorriger et s'autoévaluer
 synthese/                  texte1, texte2, demarche, redaction, grille
+autonomie/                 rapport-stage, memoire
+echanges.html              espace d'échanges (maquette)
 phraseologie/              introduction, problematique, hypotheses, methodologie, conclusion
+assets/corpus/             corpus PDF (rapports de stage, mémoires)
 assets/css/style.css       charte « papier-collage »
 assets/js/activites.js     moteur des activités (+ document et questions de lecture)
 assets/js/concordance.js   sélecteur d'expression + table de concordance
 assets/js/grille.js        grille d'auto-évaluation et score
 assets/js/redaction.js     compteur de mots, copie, check-list
+assets/js/demarche.js      types lacunaire, confrontation, plan (page Démarche)
+assets/js/autonomie.js     corpus PDF à la demande + grille Oui / En partie / Non
+assets/js/echanges.js      fils de discussion de la maquette
 data/                      un fichier JSON par page : tout le contenu modifiable
 ```
 
@@ -46,6 +55,8 @@ Tout le contenu pédagogique est dans `data/`. On ne touche pas au JavaScript po
 | Rédaction (consigne, nombre de mots, check-list) | `data/redaction.json` |
 | Grille (critères, barème, commentaires) | `data/grille.json` |
 | Phraséologie | `data/phraseo-<partie>.json` |
+| Grilles rapport / mémoire | `data/grille-rapport.json`, `data/grille-memoire.json` |
+| Échanges (fils d'exemple) | `data/echanges.json` |
 
 ### Ajouter une activité
 
@@ -59,12 +70,14 @@ Ajoutez un objet dans le tableau `activities` du fichier de la page : elle appar
   "feedbackOk": "…", "feedbackKo": "…" }
 ```
 
-**Vrai ou faux** :
+**Vrai ou faux** (`labels` facultatif, par exemple `["Oui", "Non"]` ; `etiquette` remplace le nom du type affiché sur la carte) :
 
 ```json
 { "type": "vf", "titre": "Vrai ou faux ?", "consigne": "…",
   "items": [ { "t": "affirmation", "a": true, "fb": "justification" } ] }
 ```
+
+**Texte lacunaire**, **tableau de confrontation** et **brouillon de plan** (`assets/js/demarche.js`) : voir `data/synthese-demarche.json` pour le format (`texte` avec les mots entre crochets, `modele`, `champs`).
 
 **Tableau à compléter** (saisie libre) : la réponse est juste si, une fois mise en minuscules et sans accents, elle **contient** l'un des éléments de `accepte` (on peut y mettre des radicaux : `"organis"`, `"repar"`). `attendu` (facultatif) est la réponse affichée en cas d'erreur ; sinon c'est `accepte[0]` + « … ».
 
@@ -157,7 +170,7 @@ Chaque élément est signalé comme tel sur le site.
 - **Texte 2** (« L'obsolescence programmée », sao-bio.fr) : le titre a été ajouté pour la page et la date reste à compléter (`[date]` dans `data/synthese-texte2.json`).
 - **Toutes les lignes de concordance** : à remplacer par l'extraction Sketch Engine, puis retirer la mention « Lignes d'exemple » dans les pages `phraseologie/*.html`.
 - **Barème de la grille** (0 à 3, provisoire) et **consigne de rédaction** (220 mots, « à confirmer » : passer `aConfirmer` à `false` une fois validée).
-- `[NOMS DE L'ÉQUIPE]` dans le pied de page de `index.html` et `mode-emploi.html`.
+- La photo d'accueil est chargée depuis Unsplash (`.hero-photo` dans `style.css`) : remplacer l'URL pour changer d'image.
 
 ## Mise en ligne sur GitHub Pages
 
@@ -165,4 +178,4 @@ Chaque élément est signalé comme tel sur le site.
 2. Settings → Pages → Source : « Deploy from a branch », branche `main`, dossier `/ (root)`.
 3. Le site est servi à l'adresse `https://<utilisateur>.github.io/<dépôt>/`. Tous les chemins sont relatifs, il n'y a rien à configurer.
 
-Les fichiers de travail (`.docx`, `.zip`) sont exclus du dépôt par `.gitignore`.
+Les fichiers de travail (`.docx`, `.zip`, dossier `données/`) sont exclus du dépôt par `.gitignore`.
