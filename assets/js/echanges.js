@@ -140,7 +140,7 @@
       }].concat(store.fils);
       writeStore(store);
       form.reset();
-      status.textContent = 'Publié ! (Dans ton navigateur uniquement : c’est une maquette.)';
+      status.textContent = 'Publié !';
       render();
     });
 

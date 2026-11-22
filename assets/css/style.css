@@ -1128,7 +1128,6 @@ h1, h2, h3 { line-height: 1.15; }
 
 /* ---------- Échanges (maquette) ---------- */
 
-.demo-banner { margin: 0 0 32px; padding: 14px 18px; border: 2px dashed var(--red-text); background: var(--white); font-family: var(--mono); font-size: 15px; line-height: 1.5; }
 .ech-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
 .ech-tabs button { font-family: var(--mono); font-size: 15px; min-height: 44px; padding: 8px 16px; border: 2px solid var(--ink); background: var(--paper); color: var(--ink); cursor: pointer; }
 .ech-tabs button[aria-pressed="true"] { background: var(--ink); color: var(--paper); font-weight: 700; }
