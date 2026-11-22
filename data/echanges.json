@@ -24,7 +24,7 @@
       "texte": "Dans le corpus, certains rapports utilisent « je » et d’autres « nous ». Qu’est-ce qui est attendu dans notre formation ?",
       "reponses": [
         { "auteur": "Aïcha", "role": "etudiant", "date": "11 nov.", "texte": "J’ai remarqué la même chose : « je » apparaît surtout dans la partie sur les missions." },
-        { "auteur": "Manel LAFERI", "role": "prof", "date": "11 nov.", "texte": "Bonne observation à tous les deux ! Dans un rapport de stage, « je » est accepté pour décrire tes missions et ton bilan personnel. Pour l’analyse, on préfère des tournures plus neutres. L’essentiel est de rester cohérent dans tout le rapport. Regarde aussi la vidéo du tutoriel à partir de la partie sur la rédaction.", "lien": { "texte": "Page rapport de stage", "url": "autonomie/rapport-stage.html" } }
+        { "auteur": "Manel LAFRI", "role": "prof", "date": "11 nov.", "texte": "Bonne observation à tous les deux ! Dans un rapport de stage, « je » est accepté pour décrire tes missions et ton bilan personnel. Pour l’analyse, on préfère des tournures plus neutres. L’essentiel est de rester cohérent dans tout le rapport. Regarde aussi la vidéo du tutoriel à partir de la partie sur la rédaction.", "lien": { "texte": "Page rapport de stage", "url": "autonomie/rapport-stage.html" } }
       ]
     },
     {
@@ -38,7 +38,7 @@
       "reponses": [
         { "auteur": "Kofi", "role": "etudiant", "date": "9 nov.", "texte": "Je ferme le document, j’explique l’idée à voix haute, puis j’écris ce que j’ai dit." },
         { "auteur": "Mei", "role": "etudiant", "date": "10 nov.", "texte": "Moi, je change la structure de la phrase : un verbe devient un nom (« réduire les déchets » → « la réduction des déchets »)." },
-        { "auteur": "Asmaa FEDALI", "role": "prof", "date": "10 nov.", "texte": "Excellentes stratégies ! Vous pouvez les combiner : comprendre l’idée, fermer le texte, écrire, puis comparer. Pour trouver des synonymes précis, le CNRTL est une ressource fiable.", "lien": { "texte": "Synonymes sur le CNRTL", "url": "https://www.cnrtl.fr/synonymie/" } }
+        { "auteur": "Asma FEDALI", "role": "prof", "date": "10 nov.", "texte": "Excellentes stratégies ! Vous pouvez les combiner : comprendre l’idée, fermer le texte, écrire, puis comparer. Pour trouver des synonymes précis, le CNRTL est une ressource fiable.", "lien": { "texte": "Synonymes sur le CNRTL", "url": "https://www.cnrtl.fr/synonymie/" } }
       ]
     },
     {

@@ -997,6 +997,24 @@ h1, h2, h3 { line-height: 1.15; }
 .home-txt { margin: 0 0 16px; font-size: 18px; line-height: 1.6; }
 .band span.chip-link { cursor: default; }
 
+/* ---------- Qui sommes-nous : une carte par personne ---------- */
+
+.band-inner--stack { flex-direction: column; align-items: stretch; }
+.band-inner--stack > * { flex: none; }
+.team { margin-top: 8px; }
+.team-card { color: var(--ink); display: flex; flex-direction: column; }
+.team-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 2px solid var(--ink);
+  background: var(--field);
+}
+.team-card .team-name { margin: 18px 0 8px; font-size: 26px; font-weight: 900; line-height: 1.1; }
+.team-card .team-txt { margin: 0; font-size: 17px; line-height: 1.6; }
+
 /* ---------- Démarche : lacunaire, confrontation, plan ---------- */
 
 .lacunaire { margin: 0; font-size: 19px; line-height: 2.3; }
@@ -1119,7 +1137,7 @@ h1, h2, h3 { line-height: 1.15; }
   .document + .postit { position: static; }
   .souligner-texte { position: static; max-height: 60vh; }
   .hero-photo .hero { padding-top: 40px; padding-bottom: 48px; min-height: 0; }
-  .hero-card, .etapes-ecrit > li, .ae-section { transform: none; }
+  .hero-card, .etapes-ecrit > li, .ae-section, .team-card { transform: none; }
   .etapes-ecrit > li { padding-left: 62px; }
   .ae-summary { position: static; }
 }
