@@ -306,9 +306,15 @@ h1, h2, h3 { line-height: 1.15; }
 .postit ul { margin: 0; padding-left: 20px; font-size: 17px; line-height: 1.7; }
 .postit p { margin: 0; }
 
-.torn-dark {
+/* Le papier déchiré est dessiné sur un pseudo-élément : le contenu (ex. les
+   cartes de l'équipe) peut ainsi dépasser du bandeau sans être rogné. */
+.torn-dark { position: relative; isolation: isolate; color: var(--paper); }
+.torn-dark::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: var(--ink);
-  color: var(--paper);
   clip-path: polygon(0 3%, 8% 0, 22% 2%, 40% 0, 61% 3%, 80% 0, 100% 2%, 100% 97%, 85% 100%, 63% 97%, 44% 100%, 20% 97%, 0 100%);
 }
 
@@ -997,12 +1003,45 @@ h1, h2, h3 { line-height: 1.15; }
 .home-txt { margin: 0 0 16px; font-size: 18px; line-height: 1.6; }
 .band span.chip-link { cursor: default; }
 
-/* ---------- Qui sommes-nous : une carte par personne ---------- */
+/* ---------- Qui sommes-nous : la carte s'affiche au survol du nom ---------- */
 
-.band-inner--stack { flex-direction: column; align-items: stretch; }
-.band-inner--stack > * { flex: none; }
-.team { margin-top: 8px; }
-.team-card { color: var(--ink); display: flex; flex-direction: column; }
+/* Le bandeau passe au-dessus de la section suivante tant qu'une carte est ouverte. */
+.torn-dark:has(.team-member:hover),
+.torn-dark:has(.team-member.is-open),
+.torn-dark:has(.team-toggle:focus-visible) { z-index: 5; }
+.team-hint { margin: 0 0 16px; font-family: var(--mono); font-size: 15px; color: var(--sky); }
+.team { position: relative; }
+.team-toggle { border: 0; cursor: pointer; }
+.team-toggle[aria-expanded="true"] { outline: 3px solid var(--paper); outline-offset: 3px; }
+
+.team-card {
+  position: absolute;
+  top: calc(100% + 22px);
+  left: 0;
+  z-index: 30;
+  width: min(480px, 100%);
+  color: var(--ink);
+  display: grid;
+  grid-template-columns: 132px 1fr;
+  gap: 18px;
+  align-items: start;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px) rotate(var(--r, -1deg));
+  transition: opacity .25s var(--ease), transform .25s var(--ease), visibility 0s linear .25s;
+}
+/* Pont invisible : la souris peut aller du nom à la carte sans la fermer. */
+.team-card::after { content: ""; position: absolute; left: 0; right: 0; bottom: 100%; height: 22px; }
+.team-member:nth-child(2) .team-card { --r: 1deg; }
+.team-member:nth-child(3) .team-card { --r: -.5deg; }
+
+@media (hover: hover) {
+  .team-member:hover .team-card { opacity: 1; visibility: visible; transform: rotate(var(--r, -1deg)); transition-delay: 0s; z-index: 31; }
+}
+.team-member:has(.team-toggle:focus-visible) .team-card,
+.team-member.is-open .team-card { opacity: 1; visibility: visible; transform: rotate(var(--r, -1deg)); transition-delay: 0s; z-index: 31; }
+
 .team-photo {
   display: block;
   width: 100%;
@@ -1012,8 +1051,13 @@ h1, h2, h3 { line-height: 1.15; }
   border: 2px solid var(--ink);
   background: var(--field);
 }
-.team-card .team-name { margin: 18px 0 8px; font-size: 26px; font-weight: 900; line-height: 1.1; }
-.team-card .team-txt { margin: 0; font-size: 17px; line-height: 1.6; }
+.team-card .team-name { margin: 0 0 6px; font-size: 22px; font-weight: 900; line-height: 1.1; }
+.team-card .team-txt { margin: 0; font-size: 15px; line-height: 1.55; }
+
+@media (max-width: 600px) {
+  .team-card { grid-template-columns: 1fr; width: 100%; transform: none; }
+  .team-photo { width: 140px; }
+}
 
 /* ---------- Démarche : lacunaire, confrontation, plan ---------- */
 
@@ -1137,7 +1181,7 @@ h1, h2, h3 { line-height: 1.15; }
   .document + .postit { position: static; }
   .souligner-texte { position: static; max-height: 60vh; }
   .hero-photo .hero { padding-top: 40px; padding-bottom: 48px; min-height: 0; }
-  .hero-card, .etapes-ecrit > li, .ae-section, .team-card { transform: none; }
+  .hero-card, .etapes-ecrit > li, .ae-section { transform: none; }
   .etapes-ecrit > li { padding-left: 62px; }
   .ae-summary { position: static; }
 }
