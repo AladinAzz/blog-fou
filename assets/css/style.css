@@ -1009,7 +1009,6 @@ h1, h2, h3 { line-height: 1.15; }
 .torn-dark:has(.team-member:hover),
 .torn-dark:has(.team-member.is-open),
 .torn-dark:has(.team-toggle:focus-visible) { z-index: 5; }
-.team-hint { margin: 0 0 16px; font-family: var(--mono); font-size: 15px; color: var(--sky); }
 .team { position: relative; }
 .team-toggle { border: 0; cursor: pointer; }
 .team-toggle[aria-expanded="true"] { outline: 3px solid var(--paper); outline-offset: 3px; }
