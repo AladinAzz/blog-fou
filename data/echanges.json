@@ -38,7 +38,7 @@
       "reponses": [
         { "auteur": "Kofi", "role": "etudiant", "date": "9 nov.", "texte": "Je ferme le document, j’explique l’idée à voix haute, puis j’écris ce que j’ai dit." },
         { "auteur": "Mei", "role": "etudiant", "date": "10 nov.", "texte": "Moi, je change la structure de la phrase : un verbe devient un nom (« réduire les déchets » → « la réduction des déchets »)." },
-        { "auteur": "Asmaa FEDALI", "role": "prof", "date": "10 nov.", "texte": "Excellentes stratégies ! Vous pouvez les combiner : comprendre l’idée, fermer le texte, écrire, puis comparer. Pour trouver des synonymes précis, le CNRTL est une ressource fiable.", "lien": { "texte": "Synonymes sur le CNRTL", "url": "https://www.cnrtl.fr/synonymie/" } }
+        { "auteur": "Asma FEDALI", "role": "prof", "date": "10 nov.", "texte": "Excellentes stratégies ! Vous pouvez les combiner : comprendre l’idée, fermer le texte, écrire, puis comparer. Pour trouver des synonymes précis, le CNRTL est une ressource fiable.", "lien": { "texte": "Synonymes sur le CNRTL", "url": "https://www.cnrtl.fr/synonymie/" } }
       ]
     },
     {
