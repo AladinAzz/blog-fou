@@ -22,6 +22,8 @@ python3 -m http.server 8000
 
 Après avoir modifié un JSON, rechargez la page avec **Ctrl + F5** (ou Cmd + Maj + R) : le navigateur garde parfois l'ancienne version en cache.
 
+Quand vous modifiez `assets/css/style.css` ou un fichier JS, changez aussi le suffixe `?v=...` dans les balises `<link>` / `<script>` des pages HTML (par exemple `?v=2026-11-22b` → `?v=2026-12-01`). Sinon, les visiteurs peuvent garder l'ancienne feuille de style en cache et voir un affichage cassé.
+
 ## Arborescence
 
 ```
